@@ -27,7 +27,7 @@ export const Contactme = () => {
       .then(
         (result) => {
           onOpen();
-          location.reload();
+          setTimeout(()=> location.reload(), 3000)
         },
         (error) => {
           console.log(error, "error");
