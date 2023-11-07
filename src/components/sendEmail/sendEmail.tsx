@@ -19,10 +19,10 @@ export const Contactme = () => {
 
     emailjs
       .sendForm(
-        "aservice_nfzit69",
-        "atemplate_j7yfvi6",
+        "service_nfzit69",
+        "template_j7yfvi6",
         currentForm,
-        "ac8W75kWq91ZvAFj2Y"
+        "c8W75kWq91ZvAFj2Y"
       )
       .then(
         (result) => {
