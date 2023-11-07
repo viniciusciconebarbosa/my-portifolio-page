@@ -2,6 +2,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+## Pagina responsive para dispositivos mobile.
+
+## link to final result 
+
+https://my-personal-page-vinicius.netlify.app/
+
 First, run the development server:
 
 ```bash
