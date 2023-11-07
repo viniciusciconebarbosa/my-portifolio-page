@@ -26,12 +26,11 @@ export const Contactme = () => {
       )
       .then(
         (result) => {
-          alert("Mensagem enviada !");
-          console.log(result);
+          onOpen();
           location.reload();
         },
         (error) => {
-          console.log("error");
+          console.log(error, "error");
           onOpen();
         }
       );
