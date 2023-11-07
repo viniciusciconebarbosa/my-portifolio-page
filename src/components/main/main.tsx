@@ -41,7 +41,7 @@ export default function App() {
                   <div className="hand">&#128075;</div>
                 </div>
                 <i className="hand"></i>
-                This page was made using nextJS 13_
+                This page was made using nextJS 14_
               </Header>
               <SectionDescription>
                 <div>
