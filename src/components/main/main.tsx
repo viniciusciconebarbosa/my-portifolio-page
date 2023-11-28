@@ -41,7 +41,7 @@ export default function App() {
                   <div className="hand">&#128075;</div>
                 </div>
                 <i className="hand"></i>
-                This page was made using nextJS 14_
+                Esta pagina foi feita utilizando nextJS 14_
               </Header>
               <SectionDescription>
                 <div>
@@ -52,7 +52,7 @@ export default function App() {
 
               <SectionDetails>
                 <PictureComponent>
-                  <Image src={perfil} alt="Picture of the author" />
+                  <Image priority={true} src={perfil} alt="Picture of the author" />
                   <Divisor></Divisor>
                   <StackComponent>
                     <Tpcomp>Type-Script</Tpcomp>
@@ -90,12 +90,23 @@ export default function App() {
                     <strong>Sobre mim</strong>
                   </div>
                   <br></br>
-                  Sou um apaixonado por programação e tecnologia, sempre em
-                  busca de desafios emocionantes e oportunidades de aprendizado
-                  contínuo. Desde que mergulhei no mundo da programação, tenho
-                  trilhado um caminho de constante evolução. Minha paixão por
-                  transformar linhas de código em soluções funcionais e
-                  criativas é o que me motiva todos os dias.
+                  Olá! Sou Vinicius, desenvolvedor web full stack entusiasta com
+                  experiência em tecnologias como Next.js, React, Node.js,
+                  TypeScript, MySQL e Java. Sou um apaixonado por programação e
+                  tecnologia, sempre em busca de desafios emocionantes e
+                  oportunidades de aprendizado contínuo. Desde que mergulhei no
+                  mundo da programação, tenho trilhado um caminho de constante
+                  evolução. Minha paixão por transformar linhas de código em
+                  soluções funcionais e criativas é o que me motiva todos os
+                  dias a ser um excelente desenvolvedor. 🚀 Ao longo dos ultimos
+                  12 meses aproximadamente, participei de um bootcamp onde
+                  trabalhei em projetos criativos em grupo, destacando-me no
+                  desenvolvimento full-stack. Minhas habilidades incluem criação
+                  de aplicaçoes web utilizando bibliotecas React e MUI para
+                  criaçao de interfaces interativas e criando backends robustos
+                  com Node.js. Tenho estes projetos disponiveis em meu
+                  repositorio github.com/viniciuscicone onde podem ser acessados
+                  e analisados livremente.
                 </Sobre>
                 <div id="anchorTecnologia"></div>
 

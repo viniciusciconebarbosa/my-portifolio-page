@@ -31,7 +31,7 @@ export const Contactme = () => {
         },
         (error) => {
           console.log(error, "error");
-          onOpen();
+          alert('error');
         }
       );
   };

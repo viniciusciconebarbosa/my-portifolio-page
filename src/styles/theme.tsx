@@ -10,7 +10,7 @@ export const theme = extendTheme({
       800: "#153e75",
       700: "#2a69ac",
       back: "#313344",
-      bg: "#7b7a7a"
+      bg: "#cecece"
     },
     tecColor: {
       typeScript: "#22558f",
@@ -23,7 +23,7 @@ export const theme = extendTheme({
     global: {
       // styles for the `body`
       body: {
-        bg: "#bcbcbc",
+        bg: "#e6e6e6",
       },
     },
   },
