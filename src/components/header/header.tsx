@@ -15,7 +15,7 @@ const Header = ({ children }: ComponentProps) => {
   useEffect(()=> {
 
     let target:NodeListOf<Element> = document.querySelectorAll("[data-anime]")
-  
+
     animate(target)
 
   },[])

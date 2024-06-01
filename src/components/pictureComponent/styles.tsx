@@ -14,7 +14,7 @@ export const constantePicture = {
   },
   img: {
     border: '2px solid white',
-    m: '0 1em',
+    m: '1em',
     borderRadius: "5%",
     w: "7em",
     h: "7em",

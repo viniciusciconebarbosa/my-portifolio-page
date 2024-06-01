@@ -16,10 +16,15 @@ body {
     padding: 0;
     scroll-behavior: smooth;
   }
-
-.css-1hqbhxv img {
-   
+.css-1r5ocnd img {
+  
   animation: load 3s ;
+  
+}
+
+.css-1k29ii9 {
+   
+  animation: load2 3s ;
   
 }
 
