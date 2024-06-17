@@ -1,5 +1,8 @@
+
+
 export const constanteStyle = {
-  w: "70vw",
+  
+  w: "100vw",
   fontFamily: "arial",
   display: "flex",
   justifyContent: "center",

@@ -51,6 +51,11 @@ export default function App() {
               </SectionDescription>
 
               <SectionDetails>
+                <div>
+                  {/*  <video loop muted autoPlay >
+                  <source src='https://storage.cloud.google.com/meubucketlindao/videoplayback%20(1).mp4' type="video/mp4" /> 
+                  </video> */}
+                </div>
                 <PictureComponent>
                   <Image priority={true} src={perfil} alt="Picture of the author" />
                   <Divisor></Divisor>
@@ -90,6 +95,7 @@ export default function App() {
                     <strong>Sobre mim</strong>
                   </div>
                   <br></br>
+                  
                   Olá! Sou Vinicius, desenvolvedor web full stack entusiasta com
                   experiência em tecnologias como Next.js, React, Node.js,
                   TypeScript, MySQL e Java. Sou um apaixonado por programação e

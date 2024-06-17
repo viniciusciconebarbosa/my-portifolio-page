@@ -17,7 +17,6 @@ export const constanteStyle = {
     p: '10px 30px',
     backgroundColor: 'white',
     color: 'black',
-    fontWeight: '100',
-    fontFamily: kanit.style.fontFamily
+    fontWeight: '400',
   }
 } 

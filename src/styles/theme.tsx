@@ -13,10 +13,10 @@ export const theme = extendTheme({
       bg: "#cecece"
     },
     tecColor: {
-      typeScript: "#22558f",
-      reactjs: "#559da9",
-      javaScript: "#9d8d24",
-      nextjs: "#1c1c1c",
+      typeScript: "#22558f8f",
+      reactjs: "#559ca981",
+      javaScript: "#9d8d247b",
+      nextjs: "#1c1c1cb6",
     },
   },
   styles: {

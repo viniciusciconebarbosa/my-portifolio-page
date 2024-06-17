@@ -1,7 +1,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+      'ans-serif';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   .chakra-modal__content-container{
@@ -16,13 +16,13 @@ body {
     padding: 0;
     scroll-behavior: smooth;
   }
-.css-1r5ocnd img {
+.css-urlfuo img {
   
   animation: load 3s ;
   
 }
 
-.css-1k29ii9 {
+.css-16xolrv {
    
   animation: load2 3s ;
   

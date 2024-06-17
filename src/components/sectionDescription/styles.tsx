@@ -3,7 +3,7 @@ export const constanteStyle = {
   w: ["100", "70vw", "50vw"],
   textColor: "#000000",
   fontSize: "1.2em",
-  p: "0px 20px",
+  m: ["0px 10px","0"],
   fontWeight: "300",
 
 };

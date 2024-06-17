@@ -7,7 +7,6 @@ const kanit = Kanit({
 
 export const constanteStyle = {
 
-    fontFamily: kanit.style.fontFamily,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
