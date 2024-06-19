@@ -57,7 +57,7 @@ export default function App() {
                   </video> */}
                 </div>
                 <PictureComponent>
-                  <Image priority={true} src={perfil} alt="Picture of the author" />
+                  <Image className="foto" priority={true} src={perfil} alt="Picture of the author" />
                   <Divisor></Divisor>
                   <StackComponent>
                     <Tpcomp>Type-Script</Tpcomp>
@@ -94,25 +94,45 @@ export default function App() {
                   <div>
                     <strong>Sobre mim</strong>
                   </div>
-                  <br></br>
+                  <br/><br/><br/>
                   
-                  Olá! Sou Vinicius, desenvolvedor web full stack entusiasta com
-                  experiência em tecnologias como Next.js, React, Node.js,
-                  TypeScript, MySQL e Java. Sou um apaixonado por programação e
-                  tecnologia, sempre em busca de desafios emocionantes e
-                  oportunidades de aprendizado contínuo. Desde que mergulhei no
-                  mundo da programação, tenho trilhado um caminho de constante
-                  evolução. Minha paixão por transformar linhas de código em
-                  soluções funcionais e criativas é o que me motiva todos os
-                  dias a ser um excelente desenvolvedor. 🚀 Ao longo dos ultimos
-                  12 meses aproximadamente, participei de um bootcamp onde
-                  trabalhei em projetos criativos em grupo, destacando-me no
-                  desenvolvimento full-stack. Minhas habilidades incluem criação
-                  de aplicaçoes web utilizando bibliotecas React e MUI para
-                  criaçao de interfaces interativas e criando backends robustos
-                  com Node.js. Tenho estes projetos disponiveis em meu
-                  repositorio github.com/viniciuscicone onde podem ser acessados
-                  e analisados livremente.
+                  <strong>Apresentação:</strong><br/><br/>
+
+              Olá! Sou o Vinicius Cicone, um desenvolvedor web experiente e apaixonado por criar soluções inovadoras e funcionais. Minha jornada no mundo da programação começou há 2 anos, quando iniciei um bootcamp que me abriu as portas para um universo de possibilidades. Desde então, me dedico a aprimorar minhas habilidades e me mantenho em constante evolução.
+              <br/><br/><br/><br/><br/>
+
+              <strong>Habilidades e Experiência</strong><br/><br/>
+              
+              Criação de aplicações web com React e MUI para interfaces interativas e envolventes.
+              Desenvolvimento de backends robustos com Node.js e Java para garantir a performance e escalabilidade das aplicações.
+              Projetos práticos em meu repositorio disponível no GitHub em (github.com/viniciuscicone) para avaliação e análise.
+              <br/><br/><br/><br/>
+              <strong>Motivação e Propósito:</strong><br/><br/>
+
+              Minha paixão reside em transformar linhas de código em soluções que façam a diferença. Acredito que a tecnologia tem o poder de conectar pessoas, otimizar processos e trazer novas perspectivas para o mundo. Essa crença me impulsiona a buscar novos desafios e me dedicar a cada projeto com entusiasmo e profissionalismo.
+              <br/><br/><br/><br/>
+              <strong>Diferenciais</strong>
+              <br/><br/>
+              <div className="myDiv">
+
+              <li><strong>Aprendizado contínuo :</strong> Sou um profissional em constante busca por aprimoramento, sempre atento às últimas tendências e tecnologias do mercado.
+              </li>
+              <br/>
+
+              
+              <li><strong>Visão holística:</strong> Acredito em uma abordagem completa do desenvolvimento, desde a concepção da ideia até a implementação e manutenção do projeto.
+              <br/><br/></li>
+                  
+              
+              <li><strong>Colaboração e comunicação : </strong> Me integro facilmente em equipes e me comunico de forma clara e objetiva, promovendo um ambiente de trabalho positivo e produtivo.
+              </li>
+
+              </div><br/><br/>
+              <strong>Conclusão:</strong>
+              <br/><br/>
+              Acredito que minhas habilidades, experiência e paixão pelo desenvolvimento me tornam um profissional valioso para qualquer equipe. Se você busca um desenvolvedor dedicado, criativo e comprometido com resultados, convido você a conhecer meu trabalho e entrar em contato.
+
+
                 </Sobre>
                 <div id="anchorTecnologia"></div>
 

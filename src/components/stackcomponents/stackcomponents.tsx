@@ -8,7 +8,7 @@ type ComponentProps = {
 export const StackComponent = ({ children }: ComponentProps) => {
   return (
     <>
-          <Box sx={S.constanteStyle}>{children}</Box>  
+          <Box sx={S.constanteStyle} className="stacks">{children}</Box>  
     </>
   );
 };
