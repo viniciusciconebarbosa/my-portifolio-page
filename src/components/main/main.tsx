@@ -98,7 +98,7 @@ export default function App() {
                   
                   <strong>Apresentação:</strong><br/><br/>
 
-              Olá! Sou o Vinicius Cicone, um desenvolvedor web experiente e apaixonado por criar soluções inovadoras e funcionais. Minha jornada no mundo da programação começou há 2 anos, quando iniciei um bootcamp que me abriu as portas para um universo de possibilidades. Desde então, me dedico a aprimorar minhas habilidades e me mantenho em constante evolução.
+              Olá! Sou o Vinicius, um desenvolvedor web experiente e apaixonado por criar soluções inovadoras e funcionais. Minha jornada no mundo da programação começou há 2 anos, quando iniciei um bootcamp que me abriu as portas para um universo de possibilidades. Desde então, me dedico a aprimorar minhas habilidades e me mantenho em constante evolução.
               <br/><br/><br/><br/><br/>
 
               <strong>Habilidades e Experiência</strong><br/><br/>
