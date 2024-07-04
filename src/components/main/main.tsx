@@ -115,9 +115,6 @@ export default function App() {
               <br/><br/>
               <div className="myDiv">
 
-              <li><strong>Aprendizado contínuo :</strong> Sou um profissional em constante busca por aprimoramento, sempre atento às últimas tendências e tecnologias do mercado.
-              </li>
-              <br/>
 
               
               <li><strong>Visão holística:</strong> Acredito em uma abordagem completa do desenvolvimento, desde a concepção da ideia até a implementação e manutenção do projeto.
