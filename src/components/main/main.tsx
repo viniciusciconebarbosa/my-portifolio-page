@@ -125,10 +125,7 @@ export default function App() {
               </li>
 
               </div><br/><br/>
-              <strong>Conclusão:</strong>
-              <br/><br/>
-              Acredito que minhas habilidades, experiência e paixão pelo desenvolvimento me tornam um profissional valioso para qualquer equipe. Se você busca um desenvolvedor dedicado, criativo e comprometido com resultados, convido você a conhecer meu trabalho e entrar em contato.
-
+              
 
                 </Sobre>
                 <div id="anchorTecnologia"></div>
