@@ -1,25 +1,32 @@
-import { ChakraProvider } from "@chakra-ui/react";
-import "./global.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { theme } from "@/styles/theme";
-
-const inter = Inter({ subsets: ["latin"] });
+import type React from "react"
+import type { Metadata } from "next"
+import { Roboto } from "next/font/google";
+import { ThemeProvider } from "@/src/components/theme-provider"
+import { GlobalStyles } from "@/src/styles/globals"
+import StyledComponentsRegistry from "@/src/lib/registry"
 
 export const metadata: Metadata = {
-  title: "Portfolio Vinicius | Main page",
+  title: "Vinicius | Portfolio",
+  description: "Desenvolvedor Full Stack especializado em React, Next.js e Java.",
+}
 
-  description: `Esta e minha pagina pessoal, nela ha meus contatos e informaçoes sobre cada
-  tecnologia que tenho domino`,
-};
-
-export default function RootLayout({children,}:{children:React.ReactNode;}) 
-{
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="pt-BR">
-      <body className={inter.className}>
-        <ChakraProvider theme={theme}>{children}</ChakraProvider>
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body>
+        <StyledComponentsRegistry>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <GlobalStyles />
+            {children}
+          </ThemeProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
-  );
+  )
 }
+
+import './globals.css'
