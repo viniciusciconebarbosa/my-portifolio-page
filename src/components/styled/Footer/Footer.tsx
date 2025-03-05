@@ -1,7 +1,7 @@
 "use client";
 
-import * as Layout from "@/src/components/styled/layout";
-import * as Ui from "@/src/components/styled/ui";
+import * as Layout from "@/components/styled/layout";
+import * as Ui from "@/components/styled/ui";
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {

@@ -1,60 +1,103 @@
 "use client";
 
-import * as About from "@/src/components/styled/About";
-import * as Ui from "@/src/components/styled/ui";
-import * as Layout from "@/src/components/styled/layout";
+import { Section, Container, Heading, Text } from '../base';
 import Image from "next/image";
-import Picture from "@/src/assets/Picture.jpg";
+import Picture from "@/assets/Picture.jpg";
 import styled from "styled-components";
 
+const AboutGrid = styled.div`
 
-const GradualBorderImage = styled(Image)`
-  opacity: 0.6;
-  border-radius: 50%;
-`
+  display: grid;
+  gap: ${({ theme }) => theme.space[8]};
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+`;
 
-export default function AboutSection() {
+const ImageContainer = styled.div`
+  position: relative;
+  width: 70%;
+  max-width: 280px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  border-radius: ${({ theme }) => theme.radius};
+  overflow: hidden;
+  background: ${({ theme }) => theme.colors.muted};
+  
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(
+      45deg,
+      ${({ theme }) => theme.colors.primary},
+      ${({ theme }) => theme.colors.secondary}
+    );
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+`;
+
+const ProfileImage = styled(Image)`
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+`;
+
+const AboutContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: ${({ theme }) => theme.space[4]};
+`;
+
+const About = () => {
   return (
-    <Layout.Section id="about">
-      <Layout.Container>
-        <Ui.SectionTitle>Sobre mim</Ui.SectionTitle>
-        <About.AboutGrid>
-          <About.ProfileImageContainer>
-            <About.ProfileImage>
-              <GradualBorderImage
-                src={Picture}
-                alt="Vinicius"
-                quality={100}
-                style={{
-                  
-                  // filter: "grayscale(100%)",
-                  objectFit: "cover",
-                  transform: "scale(1)",
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            </About.ProfileImage>
-          </About.ProfileImageContainer>
-          <About.AboutContent>
-            <About.AboutText>
-            Olá! Sou o Vinicius, um desenvolvedor web experiente e apaixonado por criar soluções inovadoras 
-            e funcionais. Minha jornada no mundo da programação começou há 2 anos, quando iniciei um 
-            bootcamp que me abriu as portas para um universo de possibilidades. Desde então, me dedico a 
-            aprimorar minhas habilidades e mantenho-me em constante evolução.
-            </About.AboutText>
-            <About.AboutText>
-              Minha jornada na tecnologia começou quando criei meu primeiro site. 
-              Desde então, venho criando aplicativos intuitivos e de alto
-              desempenho.
-            </About.AboutText>
-            <About.AboutText>
-              Quando não estou programando, você pode me encontrar caminhando,
-              lendo ficção científica ou experimentando novas receitas.
-            </About.AboutText>
-          </About.AboutContent>
-        </About.AboutGrid>
-      </Layout.Container>
-    </Layout.Section>
+    <Section id="about" $muted>
+      <Container>
+        <Heading>Sobre Mim</Heading>
+        <AboutGrid>
+          <ImageContainer>
+            <ProfileImage
+              src={Picture}
+              alt="Vinicius"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          </ImageContainer>
+          <AboutContent>
+            <Text>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo eos laboriosam quis, 
+              commodi maiores consequuntur dolorum, nisi corporis vitae pariatur, laborum accusantium
+               maxime magni fuga omnis. Repellendus inventore quisquam cumque.
+            </Text>
+            <Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestiae impedit 
+              excepturi numquam quam aspernatur quis sequi accusantium reprehenderit aut maxime, 
+              aperiam omnis beatae harum alias quae asperiores est voluptate..
+            </Text>
+            <Text>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, sequi impedit 
+              dolorum aliquam eius voluptates harum eaque quam provident a, ipsum exercitationem 
+              alias quibusdam suscipit iusto quisquam vitae dolorem? Natus.
+            </Text>
+          </AboutContent>
+        </AboutGrid>
+      </Container>
+    </Section>
   );
-}
+};
+
+export default About;

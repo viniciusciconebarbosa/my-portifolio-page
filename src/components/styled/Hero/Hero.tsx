@@ -1,12 +1,20 @@
 "use client";
 
-import * as Hero from "@/src/components/styled/Hero";
-import * as Ui from "@/src/components/styled/ui";
+import { useEffect, useState } from 'react';
+import * as Hero from "@/components/styled/Hero";
+import * as Ui from "@/components/styled/ui";
 import { Github, Linkedin, Mail } from "lucide-react";
-import * as Layout from "@/src/components/styled/layout";
-export default function HeroSection() {
+import * as Layout from "@/components/styled/layout";
+
+const HeroSection = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <Hero.HeroSection>
+    <Hero.HeroSection $isLoaded={isLoaded}>
       <Hero.HeroContent>
         <Hero.HeroTitle>Olá, Sou Vinicius.</Hero.HeroTitle>
         <Hero.HeroSubtitle>
@@ -21,7 +29,7 @@ export default function HeroSection() {
         </Hero.ButtonGroup>
         <Layout.SocialLinks style={{ marginTop: "1.5rem" }}>
           <Ui.ButtonLink
-            href="https://github.com"
+            href="https://github.com/viniciuscicone"
             target="_blank"
             rel="noopener noreferrer"
             $variant="ghost"
@@ -30,7 +38,7 @@ export default function HeroSection() {
             <Github size={20} />
           </Ui.ButtonLink>
           <Ui.ButtonLink
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/vinicius-cicone-barbosa-8673a9147/"
             target="_blank"
             rel="noopener noreferrer"
             $variant="ghost"
@@ -39,7 +47,7 @@ export default function HeroSection() {
             <Linkedin size={20} />
           </Ui.ButtonLink>
           <Ui.ButtonLink
-            href="mailto:contact@example.com"
+            href="mailto:viniciuscicone@gmail.com"
             $variant="ghost"
             $size="icon"
           >
@@ -49,4 +57,6 @@ export default function HeroSection() {
       </Hero.HeroContent>
     </Hero.HeroSection>
   );
-}
+};
+
+export default HeroSection;

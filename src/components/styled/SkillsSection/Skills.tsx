@@ -1,8 +1,8 @@
 "use client";
 
-import * as Skills1 from "@/src/components/styled/SkillsSection";
-import * as Ui from "@/src/components/styled/ui";
-import * as Layout from "@/src/components/styled/layout";
+import * as Skills1 from "@/components/styled/SkillsSection";
+import * as Ui from "@/components/styled/ui";
+import * as Layout from "@/components/styled/layout";
 
 export default function SkillsSection() {
   return (

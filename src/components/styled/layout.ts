@@ -47,7 +47,9 @@ export const NavLink = styled.a`
 
 export const Main = styled.main`
   padding: 2.5rem 0;
-
+  img {
+    transition: 'opacity 3s, background-color 1s, color 1s'
+  }
 `
 
 export const Section = styled.section<{ $muted?: boolean }>`

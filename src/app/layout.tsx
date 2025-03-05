@@ -1,9 +1,9 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Roboto } from "next/font/google";
-import { ThemeProvider } from "@/src/components/theme-provider"
-import { GlobalStyles } from "@/src/styles/globals"
-import StyledComponentsRegistry from "@/src/lib/registry"
+import { ThemeProvider } from "@/components/theme-provider"
+import { GlobalStyles } from "@/styles/globals"
+import StyledComponentsRegistry from "@/lib/registry"
 
 export const metadata: Metadata = {
   title: "Vinicius | Portfolio",

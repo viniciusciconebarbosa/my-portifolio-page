@@ -1,8 +1,8 @@
 "use client";
 
-import * as Contact from "@/src/components/styled/Contact";
-import * as Ui from "@/src/components/styled/ui";
-import * as Layout from "@/src/components/styled/layout";
+import * as Contact from "@/components/styled/Contact";
+import * as Ui from "@/components/styled/ui";
+import * as Layout from "@/components/styled/layout";
 
 export default function ContactSection() {
   return (

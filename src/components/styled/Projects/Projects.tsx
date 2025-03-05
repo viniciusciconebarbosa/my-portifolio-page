@@ -1,10 +1,15 @@
 "use client";
 
-import * as Projects from "@/src/components/styled/Projects";
-import * as Ui from "@/src/components/styled/ui";
+import * as Projects from "@/components/styled/Projects";
+import * as Ui from "@/components/styled/ui";
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react";
-import * as Layout from "@/src/components/styled/layout";
+import * as Layout from "@/components/styled/layout";
+import Commerce from "@/assets/commerce.jpg";
+import Filme from "@/assets/filme.jpg";
+import MySpace from "@/assets/type.jpg";
+import RepoJava from "@/assets/java.jpg";
+import Hub from "@/assets/git.jpg"
 
 export default function ProjectsSection() {
   const [activeTab, setActiveTab] = useState("all");
@@ -12,36 +17,35 @@ export default function ProjectsSection() {
   const projects = [
     {
       title: "E-commerce",
-      description:
-        "Uma loja online completa",
-      image: "/placeholder.svg?height=200&width=350",
+      description: "Uma loja online completa",
+      image: Commerce.src,
       category: "Web",
       technologies: ["React", "Node.js", "MongoDB"],
-      link: "#",
+      link: "https://e-modern-shop-vin.vercel.app/",
     },
     {
-      title: "Fitness",
+      title: "CinemaClic",
       description:
         "App",
-      image: "/placeholder.svg?height=200&width=350",
+      image: Filme.src,
       category: "Mobile",
       technologies: ["React Native", "Firebase"],
-      link: "#",
+      link: "https://project-moviedb.vercel.app/",
     },
     {
       title: "Portfolio Website",
       description:
         "Site de portfólio responsivo apresentando trabalhos e projetos criativos.",
-      image: "/placeholder.svg?height=200&width=350",
+      image: MySpace.src,
       category: "Design",
       technologies: ["Next.js", "CSS"],
-      link: "#",
+      link: "https://github.com/viniciuscicone/my-space",
     },
     {
-      title: "Gerenciador de tarefas",
+      title: "Task Manager",
       description:
-        "Um projeto em java",
-      image: "/placeholder.svg?height=200&width=350",
+        "Um projeto em SpringBoot",
+      image: RepoJava.src,
       category: "Web",
       technologies: ["JAVA", "Spring-bot"],
       link: "#",
@@ -50,7 +54,8 @@ export default function ProjectsSection() {
       title: "App",
       description:
         "Mobile app",
-      image: "/placeholder.svg?height=200&width=350",
+        
+      image: Hub.src,
       category: "Mobile",
       technologies: ["Flutter", "REST API"],
       link: "#",
@@ -59,12 +64,12 @@ export default function ProjectsSection() {
       title: "Candy game",
       description: 
         "Simple game in flutter",
-      image: "/placeholder.svg?height=200&width=350",
+      image: Hub.src,
       category: "Design",
       technologies: ["Flutter"],
       link: "#",
     },
-  ];
+  ] as const;
 
   return (
     <Layout.Section id="projects" $muted>
@@ -111,7 +116,7 @@ export default function ProjectsSection() {
                 <Projects.ProjectCard key={index}>
                   <Projects.ProjectImageContainer>
                     <Projects.ProjectImage
-                      src={project.image || "/placeholder.svg"}
+                      src={project.image?.toString() || "/placeholder.svg"}
                       alt={project.title}
                     />
                   </Projects.ProjectImageContainer>
