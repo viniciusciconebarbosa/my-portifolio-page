@@ -1,3 +1,3 @@
 README
 
-Link: [Pagina](https://www.viniciusbarbosadev.tech/)
+[Pagina](https://www.viniciusbarbosadev.tech/)
