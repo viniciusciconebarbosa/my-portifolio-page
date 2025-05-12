@@ -32,6 +32,6 @@ export const AboutContent = styled.div`
 `
 
 export const AboutText = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.md};
+  font-size: ${({ theme }) => theme.fontSizes.base};
 `
 

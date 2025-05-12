@@ -1,7 +1,7 @@
 // theme.js
 import { DefaultTheme } from 'styled-components'
-import LightBackground from "@/assets/images/light-theme-background.jpg";
-import DarkBackground from "@/assets/images/dark-theme-background.jpg";
+import LightBackground from "@/assets/images/light-theme-background.webp";
+import DarkBackground from "@/assets/images/dark-theme-background.webp";
 import { BREAKPOINTS, COLORS, FONT_SIZES, SPACES } from './theme.constants';
 
 export const lightTheme: DefaultTheme = {

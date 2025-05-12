@@ -29,7 +29,7 @@ const HeroSection = () => {
         </Hero.ButtonGroup>
         <Layout.SocialLinks style={{ marginTop: "1.5rem" }}>
           <Ui.ButtonLink
-            href="https://github.com/viniciuscicone"
+            href="https://github.com/viniciusciconebarbosa"
             target="_blank"
             rel="noopener noreferrer"
             $variant="ghost"

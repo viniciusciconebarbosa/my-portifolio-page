@@ -10,26 +10,47 @@ import Filme from "@/assets/filme.jpg";
 import MySpace from "@/assets/type.jpg";
 import RepoJava from "@/assets/java.jpg";
 import Hub from "@/assets/git.jpg"
+import ERP from "@/assets/javaSpring.jpg"
+import Weather from "@/assets/tempoApp.jpg"
 
 export default function ProjectsSection() {
   const [activeTab, setActiveTab] = useState("all");
 
   const projects = [
     {
+      title: "ERP Gerenciamento de biblioteca",
+      description:
+        "Um sistema ERP robusto projetado para otimizar a gestão de bibliotecas",
+        
+      image: ERP.src,
+      category: "Desktop Web",
+      technologies: ["Java", "REST API", "Spring-boot", "Next.js"],
+      link: "https://github.com/viniciusciconebarbosa/erp-system-library-spring",
+    },
+    {
       title: "E-commerce",
-      description: "Uma loja online completa",
+      description: "O ShopMaster é uma plataforma de e-commerce inovadora e intuitiva que visa proporcionar uma experiência de compra online perfeita para os usuários",
       image: Commerce.src,
       category: "Web",
-      technologies: ["React", "Node.js", "MongoDB"],
+      technologies: ["Next.js", "TypeScript", ],
       link: "https://e-modern-shop-vin.vercel.app/",
+    },
+    {
+      title: "Previsão do Tempo Google",
+      description: 
+        "Aplicação de previsão do tempo desenvolvida com Angular, oferecendo animações climáticas e interface moderna.",
+      image: Weather.src,
+      category: "Weather",
+      technologies: ["Angular", "Weather API", "TypeScript", "CSS"],
+      link: "https://angular-weather-seven.vercel.app/",
     },
     {
       title: "CinemaClic",
       description:
-        "App",
+        "Aplicativo de filmes e series, onde e possivel ver um trailer e achar as informaçoes mais relevantes de diversos filmes, series e artistas favoritos. Aplicaçao compativel com dispositivos moveis.",
       image: Filme.src,
-      category: "Mobile",
-      technologies: ["React Native", "Firebase"],
+      category: "Desktop Web",
+      technologies: ["Next.JS", "TypeScript", "JestJS", "MaterialUI"],
       link: "https://project-moviedb.vercel.app/",
     },
     {
@@ -39,7 +60,7 @@ export default function ProjectsSection() {
       image: MySpace.src,
       category: "Design",
       technologies: ["Next.js", "CSS"],
-      link: "https://github.com/viniciuscicone/my-space",
+      link: "https://github.com/viniciusciconebarbosa/my-space",
     },
     {
       title: "Task Manager",
@@ -48,25 +69,6 @@ export default function ProjectsSection() {
       image: RepoJava.src,
       category: "Web",
       technologies: ["JAVA", "Spring-bot"],
-      link: "#",
-    },
-    {
-      title: "App",
-      description:
-        "Mobile app",
-        
-      image: Hub.src,
-      category: "Mobile",
-      technologies: ["Flutter", "REST API"],
-      link: "#",
-    },
-    {
-      title: "Candy game",
-      description: 
-        "Simple game in flutter",
-      image: Hub.src,
-      category: "Design",
-      technologies: ["Flutter"],
       link: "#",
     },
   ] as const;

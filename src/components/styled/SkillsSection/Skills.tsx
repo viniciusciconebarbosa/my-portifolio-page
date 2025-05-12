@@ -13,7 +13,7 @@ export default function SkillsSection() {
           <Skills1.SkillCard>
             <Skills1.SkillTitle>Frontend Development</Skills1.SkillTitle>
             <Skills1.SkillTags>
-              {["React", "Next.js", "TypeScript", "HTML/CSS", "JavaScript"].map(
+              {["React", "Next.js", "TypeScript", "JavaScript", "Angular", "Node.js" , "JestJS", "MaterialUI", "MaterialUI"].map(
                 (skill, index) => (
                   <Skills1.SkillTag key={index}>{skill}</Skills1.SkillTag>
                 )
@@ -24,12 +24,18 @@ export default function SkillsSection() {
             <Skills1.SkillTitle>Backend Development</Skills1.SkillTitle>
             <Skills1.SkillTags>
               {[
+                "Java",
+                "Spring-boot",
                 "Node.js",
+                "Junit",
+                "Mockito",
                 "Express",
                 "MongoDB",
                 "PostgreSQL",
                 "REST APIs",
                 "GraphQL",
+                "JestJS",
+  
               ].map((skill, index) => (
                 <Skills1.SkillTag key={index}>{skill}</Skills1.SkillTag>
               ))}

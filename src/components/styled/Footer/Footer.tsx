@@ -12,7 +12,7 @@ export default function Footer() {
           <Layout.FooterText>© 2024 Vinicius. Todos os direitos reservados.</Layout.FooterText>
           <Layout.SocialLinks>
             <Ui.ButtonLink
-              href="https://github.com"
+              href="https://github.com/viniciusciconebarbosa"
               target="_blank"
               rel="noopener noreferrer"
               $variant="ghost"
