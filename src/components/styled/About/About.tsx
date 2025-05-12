@@ -1,4 +1,3 @@
-"use client";
 
 import { Section, Container, Heading, Text } from '../base';
 import Image from "next/image";
@@ -70,7 +69,7 @@ const About = () => {
         <AboutGrid>
           <ImageContainer>
             <ProfileImage
-              src={Picture}
+              src={Picture.src}
               alt="Vinicius"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

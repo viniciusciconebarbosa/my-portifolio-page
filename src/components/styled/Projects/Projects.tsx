@@ -205,7 +205,7 @@ export default function ProjectsSection() {
           <Ui.TabsContent $active={activeTab === "mobile"}>
             <Projects.ProjectsGrid>
               {projects
-                .filter((p) => p.category === "Mobile")
+                .filter((p) => p.category === "Desktop Web")
                 .map((project, index) => (
                   <Projects.ProjectCard key={index}>
                     <Projects.ProjectImageContainer>
