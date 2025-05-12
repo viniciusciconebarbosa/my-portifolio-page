@@ -1,7 +1,7 @@
 
 import { Section, Container, Heading, Text } from '../base';
 import Image from "next/image";
-import Picture from "@/assets/Picture.jpg";
+import Pic from "@/assets/Picture.jpg";
 import styled from "styled-components";
 
 const AboutGrid = styled.div`
@@ -69,11 +69,9 @@ const About = () => {
         <AboutGrid>
           <ImageContainer>
             <ProfileImage
-              src={Picture.src}
+              src={Pic.src}
               alt="Vinicius"
               fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
             />
           </ImageContainer>
           <AboutContent>
