@@ -1,3 +1,4 @@
+import './globals.css'
 import type React from "react"
 import type { Metadata } from "next"
 import { Roboto } from "next/font/google";
@@ -19,7 +20,7 @@ export default function RootLayout({
     <html lang="pt-BR" suppressHydrationWarning>
       <body>
         <StyledComponentsRegistry>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
             <GlobalStyles />
             {children}
           </ThemeProvider>
@@ -28,5 +29,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-import './globals.css'
