@@ -239,7 +239,7 @@ const About = () => {
             </StyledText>
             <StyledText>
               Tenho expertise em projetos que exigem integração de diferentes camadas de tecnologia, com foco em desempenho e usabilidade. 
-              Possuo projetos disponíveis em meu repositório no <Highlight>GitHub</Highlight> (github.com/viniciuscicone), onde podem ser acessados e analisados livremente. 
+      
             </StyledText>
 
             <InfoCards>
