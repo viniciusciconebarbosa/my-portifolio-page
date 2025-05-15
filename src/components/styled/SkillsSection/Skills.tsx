@@ -3,6 +3,56 @@
 import * as Skills1 from "@/components/styled/SkillsSection";
 import * as Ui from "@/components/styled/ui";
 import * as Layout from "@/components/styled/layout";
+import { 
+  SiReact,
+  SiNextdotjs,
+  SiTypescript,
+  SiJavascript,
+  SiAngular,
+  SiNodedotjs,
+  SiJest,
+  SiMui,
+  SiOpenjdk,
+  SiGithub,
+  SiSpringboot,
+  SiJunit5,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiGraphql,
+  SiGit,
+  SiDocker,
+  SiAmazon,
+  SiJenkins,
+  SiFigma
+} from "react-icons/si";
+
+const getIcon = (skill: string) => {
+  const icons: { [key: string]: JSX.Element } = {
+    "React": <SiReact />,
+    "Next.js": <SiNextdotjs />,
+    "TypeScript": <SiTypescript />,
+    "JavaScript": <SiJavascript />,
+    "Angular": <SiAngular />,
+    "Node.js": <SiNodedotjs />,
+    "JestJS": <SiJest />,
+    "MaterialUI": <SiMui />,
+    "Github": <SiGithub />,
+    "Java": <SiOpenjdk />,
+    "Spring-boot": <SiSpringboot />,
+    "Junit": <SiJunit5 />,
+    "Express": <SiExpress />,
+    "MongoDB": <SiMongodb />,
+    "PostgreSQL": <SiPostgresql />,
+    "GraphQL": <SiGraphql />,
+    "Git": <SiGit />,
+    "Docker": <SiDocker />,
+    "AWS": <SiAmazon />,
+    "CI/CD": <SiGithub />,
+    "Figma": <SiFigma />
+  };
+  return icons[skill] || null;
+};
 
 export default function SkillsSection() {
   return (
@@ -13,9 +63,12 @@ export default function SkillsSection() {
           <Skills1.SkillCard>
             <Skills1.SkillTitle>Frontend Development</Skills1.SkillTitle>
             <Skills1.SkillTags>
-              {["React", "Next.js", "TypeScript", "JavaScript", "Angular", "Node.js" , "JestJS", "MaterialUI", "MaterialUI"].map(
+              {["React", "Next.js", "TypeScript", "JavaScript", "Angular", "Node.js", "JestJS", "MaterialUI"].map(
                 (skill, index) => (
-                  <Skills1.SkillTag key={index}>{skill}</Skills1.SkillTag>
+                  <Skills1.SkillTag key={index}>
+                    {getIcon(skill)}
+                    {skill}
+                  </Skills1.SkillTag>
                 )
               )}
             </Skills1.SkillTags>
@@ -35,9 +88,11 @@ export default function SkillsSection() {
                 "REST APIs",
                 "GraphQL",
                 "JestJS",
-  
               ].map((skill, index) => (
-                <Skills1.SkillTag key={index}>{skill}</Skills1.SkillTag>
+                <Skills1.SkillTag key={index}>
+                  {getIcon(skill)}
+                  {skill}
+                </Skills1.SkillTag>
               ))}
             </Skills1.SkillTags>
           </Skills1.SkillCard>
@@ -52,7 +107,10 @@ export default function SkillsSection() {
                 "Figma",
                 "Responsive Design",
               ].map((skill, index) => (
-                <Skills1.SkillTag key={index}>{skill}</Skills1.SkillTag>
+                <Skills1.SkillTag key={index}>
+                  {getIcon(skill)}
+                  {skill}
+                </Skills1.SkillTag>
               ))}
             </Skills1.SkillTags>
           </Skills1.SkillCard>

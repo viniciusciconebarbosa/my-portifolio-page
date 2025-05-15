@@ -3,7 +3,7 @@
 import * as Projects from "@/components/styled/Projects";
 import * as Ui from "@/components/styled/ui";
 import { ArrowUpRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import * as Layout from "@/components/styled/layout";
 import Commerce from "@/assets/commerce.jpg";
 import Filme from "@/assets/filme.jpg";
@@ -12,9 +12,46 @@ import RepoJava from "@/assets/java.jpg";
 import Hub from "@/assets/git.jpg"
 import ERP from "@/assets/javaSpring.jpg"
 import Weather from "@/assets/tempoApp.jpg"
+import Cambio from "@/assets/cambio.jpg"
+import Modal from "react-modal";
+import styled from "styled-components";
+
+// Configuração do Modal
+if (typeof window !== 'undefined') {
+  Modal.setAppElement('body');
+}
+
+const StyledModal = styled(Modal)`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  outline: none;
+  max-width: 96%;
+  max-height: 96vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const ModalImage = styled.img`
+  max-width: 120%;
+  max-height: 96vh;
+  object-fit: contain;
+  border-radius: 8px;
+`;
 
 export default function ProjectsSection() {
   const [activeTab, setActiveTab] = useState("all");
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState("");
+
+  const handleImageClick = (image: string) => {
+    setSelectedImage(image);
+    setModalOpen(true);
+  };
 
   const projects = [
     {
@@ -54,13 +91,13 @@ export default function ProjectsSection() {
       link: "https://project-moviedb.vercel.app/",
     },
     {
-      title: "Portfolio Website",
+      title: "CambioNews-App",
       description:
-        "Site de portfólio responsivo apresentando trabalhos e projetos criativos.",
-      image: MySpace.src,
-      category: "Design",
-      technologies: ["Next.js", "CSS"],
-      link: "https://github.com/viniciusciconebarbosa/my-space",
+        "O Cambio News é uma aplicação web que fornece informações atualizadas sobre câmbio, notícias financeiras e análises de mercado",
+      image: Cambio.src,
+      category: "News Portal",
+      technologies: ["Remix.js", "TypeScript", "TailwindCSS", "React"],
+      link: "https://cambio-news-remix-app.vercel.app/",
     },
     {
       title: "Task Manager",
@@ -120,6 +157,8 @@ export default function ProjectsSection() {
                     <Projects.ProjectImage
                       src={project.image?.toString() || "/placeholder.svg"}
                       alt={project.title}
+                      onClick={() => handleImageClick(project.image?.toString() || "")}
+                      style={{ cursor: "pointer" }}
                     />
                   </Projects.ProjectImageContainer>
                   <Projects.ProjectHeader>
@@ -252,7 +291,7 @@ export default function ProjectsSection() {
           <Ui.TabsContent $active={activeTab === "design"}>
             <Projects.ProjectsGrid>
               {projects
-                .filter((p) => p.category === "Design")
+                .filter((p) => p.category === "Web")
                 .map((project, index) => (
                   <Projects.ProjectCard key={index}>
                     <Projects.ProjectImageContainer>
@@ -297,6 +336,20 @@ export default function ProjectsSection() {
             </Projects.ProjectsGrid>
           </Ui.TabsContent>
         </Ui.TabsContainer>
+
+        <StyledModal
+          isOpen={modalOpen}
+          onRequestClose={() => setModalOpen(false)}
+          contentLabel="Imagem do Projeto"
+          style={{
+            overlay: {
+              backgroundColor: 'rgba(0, 0, 0, 0.75)',
+              zIndex: 1000
+            }
+          }}
+        >
+          <ModalImage src={selectedImage} alt="Imagem do projeto" />
+        </StyledModal>
       </Layout.Container>
     </Layout.Section>
   );

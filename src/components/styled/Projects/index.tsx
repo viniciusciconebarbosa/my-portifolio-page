@@ -34,7 +34,7 @@ export const ProjectImage = styled.img`
   transition: all 0.3s ease;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
   }
 `
 
@@ -87,5 +87,48 @@ export const TechTag = styled.span`
   border-radius: 9999px;
   background-color: ${({ theme }) => theme.colors.muted};
   color: ${({ theme }) => theme.colors.mutedForeground};
+`
+
+export const ModalOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  cursor: pointer;
+`
+
+export const ModalContent = styled.div`
+  position: relative;
+  max-width: 90%;
+  max-height: 90vh;
+  cursor: default;
+`
+
+export const ModalImage = styled.img`
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+`
+
+export const CloseButton = styled.button`
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  
+  &:hover {
+    opacity: 0.8;
+  }
 `
 

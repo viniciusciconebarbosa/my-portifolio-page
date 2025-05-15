@@ -9,17 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "devicons-react": "^1.4.1",
+    "framer-motion": "^12.11.3",
     "lucide-react": "^0.454.0",
     "next": "15.2.0",
     "next-themes": "latest",
     "react": "^18",
     "react-dom": "^18",
-    "styled-components": "latest"
+    "react-icons": "^5.5.0",
+    "react-modal": "^3.16.3",
+    "styled-components": "latest",
+    "yet-another-react-lightbox": "^3.23.1"
   },
   "devDependencies": {
     "@types/node": "^22",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-modal": "^3.16.3",
     "typescript": "^5"
   }
 }
