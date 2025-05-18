@@ -100,13 +100,13 @@ export default function ProjectsSection() {
       link: "https://cambio-news-remix-app.vercel.app/",
     },
     {
-      title: "Task Manager",
+      title: "Task-Manager",
       description:
         "Um projeto em SpringBoot",
       image: RepoJava.src,
       category: "Web",
       technologies: ["JAVA", "Spring-bot"],
-      link: "#",
+      link: "https://github.com/viniciusciconebarbosa/spring_api",
     },
   ] as const;
 

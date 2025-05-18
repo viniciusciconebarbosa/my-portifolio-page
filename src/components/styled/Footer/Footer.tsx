@@ -21,7 +21,7 @@ export default function Footer() {
               <Github size={20} />
             </Ui.ButtonLink>
             <Ui.ButtonLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/vinicius-cicone-barbosa-8673a9147/"
               target="_blank"
               rel="noopener noreferrer"
               $variant="ghost"
@@ -30,7 +30,7 @@ export default function Footer() {
               <Linkedin size={20} />
             </Ui.ButtonLink>
             <Ui.ButtonLink
-              href="mailto:contact@example.com"
+              href="mailto:viniciuscicone@gmail.com"
               $variant="ghost"
               $size="icon"
             >
