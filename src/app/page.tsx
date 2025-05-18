@@ -17,9 +17,9 @@ export default function Portfolio() {
       <Layout.Main>
         <Hero />
         <Layout.Container>
-          <About />
-          <Projects />
           <SkillsSection />
+          <Projects />
+          <About />
           <Contact />
         </Layout.Container>
       </Layout.Main>

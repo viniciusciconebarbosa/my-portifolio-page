@@ -24,8 +24,11 @@ import {
   SiDocker,
   SiAmazon,
   SiJenkins,
-  SiFigma
+  SiFigma,
+  SiOracle
 } from "react-icons/si";
+import { PiArmchair, PiDeviceMobile, PiFolderUser } from "react-icons/pi";
+import { Pi } from "lucide-react";
 
 const getIcon = (skill: string) => {
   const icons: { [key: string]: JSX.Element } = {
@@ -49,7 +52,9 @@ const getIcon = (skill: string) => {
     "Docker": <SiDocker />,
     "AWS": <SiAmazon />,
     "CI/CD": <SiGithub />,
-    "Figma": <SiFigma />
+    "Figma": <SiFigma />,
+    "Oracle": <SiOracle />,
+    "Responsive Design": <PiDeviceMobile />
   };
   return icons[skill] || null;
 };
@@ -101,10 +106,12 @@ export default function SkillsSection() {
             <Skills1.SkillTags>
               {[
                 "Git",
+                "Oracle",
                 "Docker",
                 "AWS",
                 "CI/CD",
                 "Figma",
+                
                 "Responsive Design",
               ].map((skill, index) => (
                 <Skills1.SkillTag key={index}>
