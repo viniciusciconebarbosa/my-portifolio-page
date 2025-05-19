@@ -15,6 +15,7 @@ import Weather from "@/assets/tempoApp.jpg"
 import Cambio from "@/assets/cambio.jpg"
 import Modal from "react-modal";
 import styled from "styled-components";
+import ChatBot from "@/assets/chat.jpg"
 
 // Configuração do Modal
 if (typeof window !== 'undefined') {
@@ -73,6 +74,15 @@ export default function ProjectsSection() {
       link: "https://e-modern-shop-vin.vercel.app/",
     },
     {
+      title: "Chat-Bot em Typescript",
+      description:
+        "Um projeto de um chat-bot em Typescript",
+      image: ChatBot.src,
+      category: "Web",
+      technologies: ["Typescript", "Node.js", "React"],
+      link: "https://chat-bot-chi-coral.vercel.app/",
+    },
+    {
       title: "Previsão do Tempo Google",
       description: 
         "Aplicação de previsão do tempo desenvolvida com Angular, oferecendo animações climáticas e interface moderna.",
@@ -98,15 +108,6 @@ export default function ProjectsSection() {
       category: "News Portal",
       technologies: ["Remix.js", "TypeScript", "TailwindCSS", "React"],
       link: "https://cambio-news-remix-app.vercel.app/",
-    },
-    {
-      title: "Task-Manager",
-      description:
-        "Um projeto em SpringBoot",
-      image: RepoJava.src,
-      category: "Web",
-      technologies: ["JAVA", "Spring-bot"],
-      link: "https://github.com/viniciusciconebarbosa/spring_api",
     },
   ] as const;
 
