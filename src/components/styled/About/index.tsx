@@ -14,6 +14,7 @@ export const AboutGrid = styled.div`
 export const ProfileImageContainer = styled.div`
   display: flex;
   justify-content: center;
+  
 `
 
 export const ProfileImage = styled.div`

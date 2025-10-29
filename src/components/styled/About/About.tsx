@@ -15,6 +15,7 @@ import {
 
 const AboutGrid = styled.div`
   display: grid;
+  
   gap: ${({ theme }) => theme.space[8]};
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-template-columns: repeat(2, 1fr);
@@ -25,38 +26,24 @@ const AboutGrid = styled.div`
 const ImageContainer = styled(motion.div)`
   position: relative;
   width: 70%;
-  max-width: 280px;
+  border-radius: 12%;
+  max-width: 390px;
   aspect-ratio: 1;
   margin: 0 auto;
-  border-radius: ${({ theme }) => theme.radius};
-  overflow: hidden;
-  background: ${({ theme }) => theme.colors.muted};
+  padding: 10px; /* Espaço para a borda */
+  background: transparent;
   
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 2px;
-    background: linear-gradient(
-      45deg,
-      ${({ theme }) => theme.colors.primary},
-      ${({ theme }) => theme.colors.secondary}
-    );
-    -webkit-mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
-    mask: 
-      linear-gradient(#fff 0 0) content-box, 
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-  }
+  mask-image: linear-gradient(#c3c3c3fd, #fff);
+  mask-size: calc(100% - 5px) calc(100% - 20px);    
+  mask-position: center;
+  mask-repeat: no-repeat;
 `;
 
 const ProfileImage = styled(Image)`
   object-fit: cover;
   transition: transform 0.3s ease;
+  z-index: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   
   &:hover {
     transform: scale(1.05);
