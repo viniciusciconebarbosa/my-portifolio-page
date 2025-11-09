@@ -25,28 +25,33 @@ const AboutGrid = styled.div`
 
 const ImageContainer = styled(motion.div)`
   position: relative;
-  width: 70%;
-  border-radius: 12%;
-  max-width: 390px;
+  width: 90%;
+  object-fit: fill;
+  max-width: 200px;
   aspect-ratio: 1;
   margin: 0 auto;
-  padding: 10px; /* Espaço para a borda */
-  background: transparent;
+  padding: 8px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, ${({ theme }) => theme.colors.primary} 60%, ${({ theme }) => theme.colors.secondary} 100%);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.811);  backdrop-filter: blur(8px) saturate(180%);
+
+  transition: box-shadow 0.3s, border 0.3s;
   
-  mask-image: linear-gradient(#c3c3c3fd, #fff);
-  mask-size: calc(100% - 5px) calc(100% - 20px);    
-  mask-position: center;
-  mask-repeat: no-repeat;
+  &:hover {
+    box-shadow: 0 0 32px 4px ${({ theme }) => theme.colors.primary};
+    border: 0px solid ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 const ProfileImage = styled(Image)`
   object-fit: cover;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
   z-index: 1;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-radius: 5px;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.04) brightness(1.08);
+    box-shadow: 0 4px 16px ${({ theme }) => theme.colors.primary}55;
   }
 `;
 
