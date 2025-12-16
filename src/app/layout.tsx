@@ -8,8 +8,8 @@ import StyledComponentsRegistry from "@/lib/registry"
 
 export const metadata: Metadata = {
   // ========== TÍTULO & DESCRIÇÃO (OTIMIZADOS - Opção 3) ==========
-  title: "Vinicius Barbosa | Dev Full Stack: React (Next.js) & Backend Java",
-  description: "Desenvolvedor Full Stack focado em criar aplicações web rápidas, escaláveis e com boa experiência. Domínio do ecossistema React (Next.js) no front-end e Java/Spring no back-end. Transformo ideias em produtos digitais funcionais. Vamos conversar?",
+  title: "Vinicius Cicone Barbosa | Dev Full Stack: React (Next.js) & Backend Java",
+  description: "Vinicius Cicone Barbosa Desenvolvedor Full Stack focado em criar aplicações web rápidas, escaláveis e com boa experiência. Domínio do ecossistema React (Next.js) no front-end e Java/Spring no back-end. Transformo ideias em produtos digitais funcionais. Vamos conversar?",
 
   // ========== CONFIGURAÇÕES PARA MECANISMOS DE BUSCA ==========
   robots: {
@@ -32,6 +32,8 @@ export const metadata: Metadata = {
 
   // ========== METADADOS BÁSICOS ==========
   keywords: [
+    "vinicius barbosa",
+    "Vinicius Cicone Barbosa",
     "desenvolvedor fullstack",
     "desenvolvedor full stack",
     "React",
@@ -44,17 +46,17 @@ export const metadata: Metadata = {
     "portfolio desenvolvedor",
     "desenvolvedor web"
   ],
-  authors: [{ name: "Vinicius Barbosa" }],
-  publisher: "Vinicius Barbosa",
+  authors: [{ name: "Vinicius Cicone Barbosa" }],
+  publisher: "Vinicius Cicone Barbosa",
 
   // ========== OPEN GRAPH (REDES SOCIAIS) ==========
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
     url: 'https://www.viniciusbarbosadev.tech',
-    title: "Vinicius Barbosa | Dev Full Stack: React (Next.js) & Backend Java",
-    description: "Desenvolvedor Full Stack focado em criar aplicações web rápidas, escaláveis e com boa experiência. Domínio do ecossistema React (Next.js) no front-end e Java/Spring no back-end.",
-    siteName: "Portfólio Vinicius Barbosa",
+    title: "Vinicius Cicone Barbosa | Dev Full Stack: React (Next.js) & Backend Java",
+    description: "Vinicius Cicone Barbosa Desenvolvedor Full Stack focado em criar aplicações web rápidas, escaláveis e com boa experiência. Domínio do ecossistema React (Next.js) no front-end e Java/Spring no back-end.",
+    siteName: "Portfólio Vinicius Cicone Barbosa",
     // (OPCIONAL) Adicione uma imagem de preview para redes sociais:
     // images: [{
     //   url: '/og-image.png', // Crie um arquivo og-image.png de 1200x630px na pasta /public
