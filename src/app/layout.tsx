@@ -8,7 +8,7 @@ import StyledComponentsRegistry from "@/lib/registry"
 
 export const metadata: Metadata = {
   // ========== TÍTULO & DESCRIÇÃO (OTIMIZADOS - Opção 3) ==========
-  title: "Vinicius Cicone Barbosa | Dev Full Stack: React (Next.js) & Backend Java",
+  title: "Vinicius Cicone Barbosa | Dev Full Stack: React (Next.js) & Java",
   description: "Vinicius Cicone Barbosa Desenvolvedor Full Stack focado em criar aplicações web rápidas, escaláveis e com boa experiência. Domínio do ecossistema React (Next.js) no front-end e Java/Spring no back-end. Transformo ideias em produtos digitais funcionais. Vamos conversar?",
 
   // ========== CONFIGURAÇÕES PARA MECANISMOS DE BUSCA ==========
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     url: 'https://www.viniciusbarbosadev.tech',
-    title: "Vinicius Cicone Barbosa | Dev Full Stack: React (Next.js) & Backend Java",
+    title: "Vinicius Cicone Barbosa | Dev Full Stack: React (Next.js) & Java",
     description: "Vinicius Cicone Barbosa Desenvolvedor Full Stack focado em criar aplicações web rápidas, escaláveis e com boa experiência. Domínio do ecossistema React (Next.js) no front-end e Java/Spring no back-end.",
     siteName: "Portfólio Vinicius Cicone Barbosa",
     // (OPCIONAL) Adicione uma imagem de preview para redes sociais:
