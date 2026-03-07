@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 
   // ========== URL CANÔNICA & BASE (RESOLVE AVISOS) ==========
   alternates: {
-    canonical: 'https://www.viniciusbarbosadev.tech',
+    canonical: 'https://www.viniciusbarbosadev.app',
   },
-  metadataBase: new URL('https://www.viniciusbarbosadev.tech'),
+  metadataBase: new URL('https://www.viniciusbarbosadev.app'),
 
   // ========== METADADOS BÁSICOS ==========
   keywords: [
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://www.viniciusbarbosadev.tech',
+    url: 'https://www.viniciusbarbosadev.app',
     title: "Vinicius Cicone Barbosa | Dev Full Stack: React (Next.js) & Java",
     description: "Vinicius Cicone Barbosa Desenvolvedor Full Stack focado em criar aplicações web rápidas, escaláveis e com boa experiência. Domínio do ecossistema React (Next.js) no front-end e Java/Spring no back-end.",
     siteName: "Portfólio Vinicius Cicone Barbosa",
