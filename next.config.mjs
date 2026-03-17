@@ -26,7 +26,7 @@ const nextConfig = {
     unoptimized: true,
     loader: 'custom',
     loaderFile: './image-loader.js',
-    domains: ['viniciusbarbosadev.tech'],
+    domains: ['viniciusbarbosadev.app'],
   },
   experimental: {
     webpackBuildWorker: true,
