@@ -15,17 +15,18 @@ import {
 
 const AboutGrid = styled.div`
   display: grid;
-  
-  gap: ${({ theme }) => theme.space[8]};
+  padding-top: 3rem;
+  justify-items: center;
+  gap: ${({ theme }) => theme.space[16]};
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
   }
 `;
 
 const ImageContainer = styled(motion.div)`
   position: relative;
-  width: 90%;
+  width: 60%;
   object-fit: fill;
   max-width: 200px;
   aspect-ratio: 1;
@@ -34,13 +35,7 @@ const ImageContainer = styled(motion.div)`
   border-radius: 5px;
   background: linear-gradient(135deg, ${({ theme }) => theme.colors.primary} 60%, ${({ theme }) => theme.colors.secondary} 100%);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.811);  backdrop-filter: blur(8px) saturate(180%);
-
-  transition: box-shadow 0.3s, border 0.3s;
   
-  &:hover {
-    box-shadow: 0 0 32px 4px ${({ theme }) => theme.colors.primary};
-    border: 0px solid ${({ theme }) => theme.colors.primary};
-  }
 `;
 
 const ProfileImage = styled(Image)`
@@ -49,14 +44,12 @@ const ProfileImage = styled(Image)`
   z-index: 1;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border-radius: 5px;
-  &:hover {
-    transform: scale(1.04) brightness(1.08);
-    box-shadow: 0 4px 16px ${({ theme }) => theme.colors.primary}55;
-  }
 `;
 
 const AboutContent = styled(motion.div)`
   display: flex;
+  width: 80%;
+  justify-content: center;
   flex-direction: column;
   gap: ${({ theme }) => theme.space[6]};
   background: ${({ theme }) => theme.colors.card};
