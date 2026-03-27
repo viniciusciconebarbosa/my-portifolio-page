@@ -21,20 +21,22 @@ const AboutGrid = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
+ 
   }
+    
 `;
 
 const ImageContainer = styled(motion.div)`
   position: relative;
   width: 60%;
   object-fit: fill;
-  max-width: 200px;
+  max-width: 300px;
   aspect-ratio: 1;
   margin: 0 auto;
   padding: 8px;
   border-radius: 5px;
-  background: linear-gradient(135deg, ${({ theme }) => theme.colors.primary} 60%, ${({ theme }) => theme.colors.secondary} 100%);
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 6px 10px rgba(0, 0, 0, 0.811);  backdrop-filter: blur(8px) saturate(180%);
+  
+  
   
 `;
 
@@ -43,12 +45,12 @@ const ProfileImage = styled(Image)`
   transition: transform 0.3s cubic-bezier(.4,0,.2,1);
   z-index: 1;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  border-radius: 5px;
+  border-radius: 200px;
 `;
 
 const AboutContent = styled(motion.div)`
   display: flex;
-  width: 80%;
+  width: 110%;
   justify-content: center;
   flex-direction: column;
   gap: ${({ theme }) => theme.space[6]};
@@ -57,6 +59,14 @@ const AboutContent = styled(motion.div)`
   border-radius: ${({ theme }) => theme.radius};
   box-shadow: 0 4px 6px -1px ${({ theme }) => `${theme.colors.primary}10`},
               0 2px 4px -1px ${({ theme }) => `${theme.colors.primary}05`};
+              
+  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    width: 80%;
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    width: 80%;
+  }
 `;
 
 const StyledHeading = styled(Heading)`
@@ -67,17 +77,7 @@ const StyledHeading = styled(Heading)`
   text-align: center;
   position: relative;
   
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: ${({ theme }) => theme.colors.primary};
-    border-radius: 2px;
-  }
+
 `;
 
 const StyledText = styled(Text)`
@@ -102,7 +102,6 @@ const StyledText = styled(Text)`
   
   &:first-of-type {
     font-weight: 500;
-    font-size: ${({ theme }) => theme.fontSizes.xl};
     color: ${({ theme }) => theme.colors.foreground};
   }
   
@@ -217,14 +216,20 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <StyledText>
-              Atualmente faço <Highlight>Análise e Desenvolvimento de Sistemas</Highlight>. Desenvolvedor Full Stack com sólida experiência na construção de aplicações web completas, desde a concepção até a finalização. 
+              Sou um Desenvolvedor Backend apaixonado por arquitetura de software e integrações de alto desempenho. Minha jornada em 
+              <Highlight> Análise e Desenvolvimento de Sistemas</Highlight> me deu a base teórica, mas foi na prática — construindo desde ERPs em Java (Spring) até gateways de IA com 
+              Node.js (NestJS) — que desenvolvi minha visão de produto.
             </StyledText>
             <StyledText>
-              Atuo tanto no desenvolvimento de interfaces quanto na implementação de sistemas backend, sempre priorizando soluções eficientes e de alta qualidade. 
+              Acredito que um bom código backend deve ser invisível para o usuário, mas inquebrável para a operação.
+               Por isso, aplico princípios de Clean Code, desenvolvo sob a ótica de testes automatizados e orquestro
+                ambientes fluidos com Docker e CI/CD. Tenho forte vivência na criação de Webhooks, integração de
+                 sistemas terceiros (CRMs, automações) e implementação de IA (como a API do Gemini) para tornar
+                  fluxos de dados mais inteligentes e autônomos.
             </StyledText>
             <StyledText>
-              Tenho expertise em projetos que exigem integração de diferentes camadas de tecnologia, com foco em desempenho e usabilidade. 
-      
+              Estou sempre em busca de desafios que exijam soluções criativas
+               de infraestrutura e conectividade sistêmica.
             </StyledText>
 
             <InfoCards>
