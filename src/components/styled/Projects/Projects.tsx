@@ -55,26 +55,35 @@ export default function ProjectsSection() {
 		setSelectedImage(image);
 		setModalOpen(true);
 	};
-
+	
 	const projects = [
 		{
 			title: "ERP Gerenciamento de biblioteca",
 			description:
 				"ERP robusto com Java 21 e Spring Boot 3.x, apresentando arquitetura desacoplada, segurança com JWT/Spring Security e infraestrutura completa na DigitalOcean com Nginx e CI/CD.",
-
-			image: ERP.src,
-			category: "Web",
-			technologies: ["Java", "REST API", "Spring-boot", "Next.js"],
-			link: "https://github.com/viniciusciconebarbosa/erp-system-library-spring",
-		},
-		{
-			title: "Churn Prediction API (Python/ML)",
-			description: "API RESTful de Machine Learning com Random Forest e Pandas para previsão de Churn em tempo real. Focado em ETL e inteligência de dados.",
-			image: Commerce.src,
-			category: "Web",
-			technologies: ["Python", "TypeScript", ],
-			link: "https://github.com/viniciusciconebarbosa/machine-learning-frela",
-		},
+				
+				image: ERP.src,
+				category: "Web",
+				technologies: ["Java", "REST API", "Spring-boot", "Next.js"],
+				link: "https://github.com/viniciusciconebarbosa/erp-system-library-spring",
+			},
+			{
+				title: "Notification Hub – Microserviço Universal ( NestJS / TypeScript )",
+				description:
+					"Microserviço escalável desenvolvido com NestJS e PostgreSQL para centralização de notificações transacionais. Integra Google Gemini AI para refinamento inteligente de conteúdo e Docker para infraestrutura resiliente. Possui documentação interativa com Swagger e cobertura de testes unitários.",
+				image: microservice.src,
+				category: "Desktop",
+				technologies: ["NestJS", "TypeScript", "Jest", "Docker"],
+				link: "https://github.com/viniciusciconebarbosa/notification-hub-nestjs",
+			},
+			{
+				title: "Churn Prediction API (Python/ML)",
+				description: "API RESTful de Machine Learning com Random Forest e Pandas para previsão de Churn em tempo real. Focado em ETL e inteligência de dados.",
+				image: Commerce.src,
+				category: "Web",
+				technologies: ["Python", "TypeScript", ],
+				link: "https://github.com/viniciusciconebarbosa/machine-learning-frela",
+			},
 		{
 			title: "Word Hierarchy Analyzer (TypeScript/Data Structures)",
 			description:
@@ -92,15 +101,6 @@ export default function ProjectsSection() {
 			category: "API Methods",
 			technologies: ["Spring Framework", "API", "JavaScript", "CSS"],
 			link: "https://github.com/viniciusciconebarbosa/short-long-polling-websocket",
-		},
-		{
-			title: "Notification Hub – Microserviço Universal ( NestJS / TypeScript )",
-			description:
-				"Microserviço escalável desenvolvido com NestJS e PostgreSQL para centralização de notificações transacionais. Integra Google Gemini AI para refinamento inteligente de conteúdo e Docker para infraestrutura resiliente. Possui documentação interativa com Swagger e cobertura de testes unitários.",
-			image: microservice.src,
-			category: "Desktop",
-			technologies: ["NestJS", "TypeScript", "Jest", "Docker"],
-			link: "https://github.com/viniciusciconebarbosa/notification-hub-nestjs",
 		},
 		{
 			title: "Página Pessoal ( NextJS / TypeScript / Material UI  )",
