@@ -100,7 +100,7 @@ export default function ProjectsSection() {
 			image: microservice.src,
 			category: "Desktop",
 			technologies: ["NestJS", "TypeScript", "Jest", "Docker"],
-			link: "https://github.com/viniciusciconebarbosa/pomodoro-spotify-player",
+			link: "https://github.com/viniciusciconebarbosa/notification-hub-nestjs",
 		},
 		{
 			title: "Página Pessoal ( NextJS / TypeScript / Material UI  )",
