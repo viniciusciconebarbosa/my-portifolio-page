@@ -30,7 +30,7 @@ export const ProjectImageContainer = styled.div`
 export const ProjectImage = styled.img`
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transition: all 0.3s ease;
 
   &:hover {

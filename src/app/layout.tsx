@@ -11,6 +11,14 @@ export const metadata: Metadata = {
   title: "Vinicius Cicone Barbosa | Dev Full Stack: React (Next.js) & Java",
   description: "Vinicius Cicone Barbosa Desenvolvedor Full Stack focado em criar aplicações web rápidas, escaláveis e com boa experiência. Domínio do ecossistema React (Next.js) no front-end e Java/Spring no back-end. Transformo ideias em produtos digitais funcionais. Vamos conversar?",
 
+  icons: {
+        icon: [
+            {
+                url: '/favicon.ico',
+                sizes: 'any',
+            },
+        ],
+    },
   // ========== CONFIGURAÇÕES PARA MECANISMOS DE BUSCA ==========
   robots: {
     index: true,

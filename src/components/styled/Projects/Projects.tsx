@@ -16,6 +16,8 @@ import pagina from "@/assets/pagina-pessoal.jpg"
 import Modal from "react-modal";
 import styled from "styled-components";
 import Ar from "@/assets/ar.jpg"
+import microservice from "@/assets/microservice.jpg"
+
 
 // Configuração do Modal
 if (typeof window !== 'undefined') {
@@ -92,12 +94,12 @@ export default function ProjectsSection() {
 			link: "https://github.com/viniciusciconebarbosa/short-long-polling-websocket",
 		},
 		{
-			title: "Pomodoro Spotify Player ( TypeScript / Tauri Framework )",
+			title: "Notification Hub – Microserviço Universal ( NestJS / TypeScript )",
 			description:
-				"Um aplicativo feito utilizando o framework tauri, multi-plataformas Windows, Mac e Linux elegante e produtivo que combina a técnica Pomodoro com a reprodução de músicas do Spotify. Desenvolvido com Tauri (Rust + TypeScript + React) para alto desempenho e experiência nativa.",
-			image: pomo.src,
+				"Microserviço escalável desenvolvido com NestJS e PostgreSQL para centralização de notificações transacionais. Integra Google Gemini AI para refinamento inteligente de conteúdo e Docker para infraestrutura resiliente. Possui documentação interativa com Swagger e cobertura de testes unitários.",
+			image: microservice.src,
 			category: "Desktop",
-			technologies: ["Tauri", "TypeScript", "Rust"],
+			technologies: ["NestJS", "TypeScript", "Jest", "Docker"],
 			link: "https://github.com/viniciusciconebarbosa/pomodoro-spotify-player",
 		},
 		{
