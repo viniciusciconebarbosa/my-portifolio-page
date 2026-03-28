@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const ContactContainer = styled.div`
-  max-width: 32rem;
+  max-width: 50rem;
   margin: 0 auto;
 `
 
