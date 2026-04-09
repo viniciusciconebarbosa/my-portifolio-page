@@ -1,9 +1,9 @@
 "use client";
 
-import * as Skills1 from "@/components/styled/SkillsSection";
-import * as Ui from "@/components/styled/ui";
-import * as Layout from "@/components/styled/layout";
-import { 
+import * as Skills1 from "@/components/SkillsSection";
+import * as Ui from "@/components/ui";
+import * as Layout from "@/components/layout";
+import {
   SiReact,
   SiNextdotjs,
   SiTypescript,
@@ -111,7 +111,7 @@ export default function SkillsSection() {
                 "AWS",
                 "CI/CD",
                 "Figma",
-                
+
                 "Responsive Design",
               ].map((skill, index) => (
                 <Skills1.SkillTag key={index}>

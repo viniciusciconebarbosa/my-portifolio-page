@@ -1,10 +1,10 @@
 "use client";
 
-import * as Projects from "@/components/styled/Projects";
-import * as Ui from "@/components/styled/ui";
+import * as Projects from "@/components/Projects";
+import * as Ui from "@/components/ui";
 import { ArrowUpRight } from "lucide-react";
 import { useState, useEffect } from "react";
-import * as Layout from "@/components/styled/layout";
+import * as Layout from "@/components/layout";
 import Commerce from "@/assets/churn.jpg";
 import pomo from "@/assets/pomo.jpg";
 import MySpace from "@/assets/type.jpg";
@@ -55,35 +55,35 @@ export default function ProjectsSection() {
 		setSelectedImage(image);
 		setModalOpen(true);
 	};
-	
+
 	const projects = [
 		{
 			title: "ERP Gerenciamento de biblioteca",
 			description:
 				"ERP robusto com Java 21 e Spring Boot 3.x, apresentando arquitetura desacoplada, segurança com JWT/Spring Security e infraestrutura completa na DigitalOcean com Nginx e CI/CD.",
-				
-				image: ERP.src,
-				category: "Web",
-				technologies: ["Java", "REST API", "Spring-boot", "Next.js"],
-				link: "https://github.com/viniciusciconebarbosa/erp-system-library-spring",
-			},
-			{
-				title: "Notification Hub – Microserviço Universal ( NestJS / TypeScript )",
-				description:
-					"Microserviço escalável desenvolvido com NestJS e PostgreSQL para centralização de notificações transacionais. Integra Google Gemini AI para refinamento inteligente de conteúdo e Docker para infraestrutura resiliente. Possui documentação interativa com Swagger e cobertura de testes unitários.",
-				image: microservice.src,
-				category: "Desktop",
-				technologies: ["NestJS", "TypeScript", "Jest", "Docker"],
-				link: "https://github.com/viniciusciconebarbosa/notification-hub-nestjs",
-			},
-			{
-				title: "Churn Prediction API (Python/ML)",
-				description: "API RESTful de Machine Learning com Random Forest e Pandas para previsão de Churn em tempo real. Focado em ETL e inteligência de dados.",
-				image: Commerce.src,
-				category: "Web",
-				technologies: ["Python", "TypeScript", ],
-				link: "https://github.com/viniciusciconebarbosa/machine-learning-frela",
-			},
+
+			image: ERP.src,
+			category: "Web",
+			technologies: ["Java", "REST API", "Spring-boot", "Next.js"],
+			link: "https://github.com/viniciusciconebarbosa/erp-system-library-spring",
+		},
+		{
+			title: "Notification Hub – Microserviço Universal ( NestJS / TypeScript )",
+			description:
+				"Microserviço escalável desenvolvido com NestJS e PostgreSQL para centralização de notificações transacionais. Integra Google Gemini AI para refinamento inteligente de conteúdo e Docker para infraestrutura resiliente. Possui documentação interativa com Swagger e cobertura de testes unitários.",
+			image: microservice.src,
+			category: "Desktop",
+			technologies: ["NestJS", "TypeScript", "Jest", "Docker"],
+			link: "https://github.com/viniciusciconebarbosa/notification-hub-nestjs",
+		},
+		{
+			title: "Churn Prediction API (Python/ML)",
+			description: "API RESTful de Machine Learning com Random Forest e Pandas para previsão de Churn em tempo real. Focado em ETL e inteligência de dados.",
+			image: Commerce.src,
+			category: "Web",
+			technologies: ["Python", "TypeScript",],
+			link: "https://github.com/viniciusciconebarbosa/machine-learning-frela",
+		},
 		{
 			title: "Word Hierarchy Analyzer (TypeScript/Data Structures)",
 			description:
@@ -194,95 +194,95 @@ export default function ProjectsSection() {
 					<Ui.TabsContent $active={activeTab === "web"}>
 						<Projects.ProjectsGrid>
 							{projects
-							.filter((p) => p.category === "Web")
-							.map((project, index) => (
-								<Projects.ProjectCard key={index}>
-									<Projects.ProjectImageContainer>
-										<Projects.ProjectImage
-											src={project.image || "/placeholder.svg"}
-											alt={project.title}
-										/>
-									</Projects.ProjectImageContainer>
-									<Projects.ProjectHeader>
-										<Projects.ProjectHeaderTop>
-											<Projects.ProjectTitle>
-												{project.title}
-											</Projects.ProjectTitle>
-											<Projects.ProjectCategory>
-												{project.category}
-											</Projects.ProjectCategory>
-										</Projects.ProjectHeaderTop>
-										<Projects.ProjectDescription>
-											{project.description}
-										</Projects.ProjectDescription>
-									</Projects.ProjectHeader>
-									<Projects.ProjectFooter>
-										<Projects.TechStack>
-											{project.technologies.map((tech, index) => (
-												<Projects.TechTag key={index}>
-													{tech}
-												</Projects.TechTag>
-											))}
-										</Projects.TechStack>
-										<Ui.ButtonLink
-											href={project.link}
-											target="_blank"
-											rel="noopener noreferrer"
-											$variant="ghost"
-											$size="sm"
-										>
-											View <ArrowUpRight size={16} />
-										</Ui.ButtonLink>
-									</Projects.ProjectFooter>
-								</Projects.ProjectCard>
-							))}
+								.filter((p) => p.category === "Web")
+								.map((project, index) => (
+									<Projects.ProjectCard key={index}>
+										<Projects.ProjectImageContainer>
+											<Projects.ProjectImage
+												src={project.image || "/placeholder.svg"}
+												alt={project.title}
+											/>
+										</Projects.ProjectImageContainer>
+										<Projects.ProjectHeader>
+											<Projects.ProjectHeaderTop>
+												<Projects.ProjectTitle>
+													{project.title}
+												</Projects.ProjectTitle>
+												<Projects.ProjectCategory>
+													{project.category}
+												</Projects.ProjectCategory>
+											</Projects.ProjectHeaderTop>
+											<Projects.ProjectDescription>
+												{project.description}
+											</Projects.ProjectDescription>
+										</Projects.ProjectHeader>
+										<Projects.ProjectFooter>
+											<Projects.TechStack>
+												{project.technologies.map((tech, index) => (
+													<Projects.TechTag key={index}>
+														{tech}
+													</Projects.TechTag>
+												))}
+											</Projects.TechStack>
+											<Ui.ButtonLink
+												href={project.link}
+												target="_blank"
+												rel="noopener noreferrer"
+												$variant="ghost"
+												$size="sm"
+											>
+												View <ArrowUpRight size={16} />
+											</Ui.ButtonLink>
+										</Projects.ProjectFooter>
+									</Projects.ProjectCard>
+								))}
 						</Projects.ProjectsGrid>
 					</Ui.TabsContent>
 					<Ui.TabsContent $active={activeTab === "design"}>
 						<Projects.ProjectsGrid>
 							{projects
-							.filter((p) => p.category === "Web")
-							.map((project, index) => (
-								<Projects.ProjectCard key={index}>
-									<Projects.ProjectImageContainer>
-										<Projects.ProjectImage
-											src={project.image || "/placeholder.svg"}
-											alt={project.title}
-										/>
-									</Projects.ProjectImageContainer>
-									<Projects.ProjectHeader>
-										<Projects.ProjectHeaderTop>
-											<Projects.ProjectTitle>
-												{project.title}
-											</Projects.ProjectTitle>
-											<Projects.ProjectCategory>
-												{project.category}
-											</Projects.ProjectCategory>
-										</Projects.ProjectHeaderTop>
-										<Projects.ProjectDescription>
-											{project.description}
-										</Projects.ProjectDescription>
-									</Projects.ProjectHeader>
-									<Projects.ProjectFooter>
-										<Projects.TechStack>
-											{project.technologies.map((tech, index) => (
-												<Projects.TechTag key={index}>
-													{tech}
-												</Projects.TechTag>
-											))}
-										</Projects.TechStack>
-										<Ui.ButtonLink
-											href={project.link}
-											target="_blank"
-											rel="noopener noreferrer"
-											$variant="ghost"
-											$size="sm"
-										>
-											View <ArrowUpRight size={16} />
-										</Ui.ButtonLink>
-									</Projects.ProjectFooter>
-								</Projects.ProjectCard>
-							))}
+								.filter((p) => p.category === "Web")
+								.map((project, index) => (
+									<Projects.ProjectCard key={index}>
+										<Projects.ProjectImageContainer>
+											<Projects.ProjectImage
+												src={project.image || "/placeholder.svg"}
+												alt={project.title}
+											/>
+										</Projects.ProjectImageContainer>
+										<Projects.ProjectHeader>
+											<Projects.ProjectHeaderTop>
+												<Projects.ProjectTitle>
+													{project.title}
+												</Projects.ProjectTitle>
+												<Projects.ProjectCategory>
+													{project.category}
+												</Projects.ProjectCategory>
+											</Projects.ProjectHeaderTop>
+											<Projects.ProjectDescription>
+												{project.description}
+											</Projects.ProjectDescription>
+										</Projects.ProjectHeader>
+										<Projects.ProjectFooter>
+											<Projects.TechStack>
+												{project.technologies.map((tech, index) => (
+													<Projects.TechTag key={index}>
+														{tech}
+													</Projects.TechTag>
+												))}
+											</Projects.TechStack>
+											<Ui.ButtonLink
+												href={project.link}
+												target="_blank"
+												rel="noopener noreferrer"
+												$variant="ghost"
+												$size="sm"
+											>
+												View <ArrowUpRight size={16} />
+											</Ui.ButtonLink>
+										</Projects.ProjectFooter>
+									</Projects.ProjectCard>
+								))}
 						</Projects.ProjectsGrid>
 					</Ui.TabsContent>
 				</Ui.TabsContainer>

@@ -1,8 +1,8 @@
 "use client";
 
-import * as Contact from "@/components/styled/Contact";
-import * as Ui from "@/components/styled/ui";
-import * as Layout from "@/components/styled/layout";
+import * as Contact from "@/components/Contact";
+import * as Ui from "@/components/ui";
+import * as Layout from "@/components/layout";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 

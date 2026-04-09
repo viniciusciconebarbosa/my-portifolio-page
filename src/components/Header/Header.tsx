@@ -1,8 +1,8 @@
 "use client";
 
-import * as Layout from "@/components/styled/layout";
-import * as Ui from "@/components/styled/ui";
-import ThemeToggle from "@/components/styled/ThemeToggle/ThemeToggle";
+import * as Layout from "@/components/layout";
+import * as Ui from "@/components/ui";
+import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
 
 export default function Header() {
   return (

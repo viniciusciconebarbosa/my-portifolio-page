@@ -1,19 +1,19 @@
 "use client";
 
-import Header from "@/components/styled/Header/Header";
-import Hero from "@/components/styled/Hero/Hero";
-import About from "@/components/styled/About/About";
-import Projects from "@/components/styled/Projects/Projects";
-import Contact from "@/components/styled/Contact/Contact";
-import Footer from "@/components/styled/Footer/Footer";
-import * as Layout from "@/components/styled/layout";
-import SkillsSection from "@/components/styled/SkillsSection/Skills";
+import Header from "@/components/Header/Header";
+import Hero from "@/components/Hero/Hero";
+import About from "@/components/About/About";
+import Projects from "@/components/Projects/Projects";
+import Contact from "@/components/Contact/Contact";
+import Footer from "@/components/Footer/Footer";
+import * as Layout from "@/components/layout";
+import SkillsSection from "@/components/SkillsSection/Skills";
 
 
 export default function Portfolio() {
   return (
     <>
-      <Header/>
+      <Header />
       <Layout.Main>
         <Hero />
         <Layout.Container>

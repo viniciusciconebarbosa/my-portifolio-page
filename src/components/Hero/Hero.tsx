@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import * as Hero from "@/components/styled/Hero";
-import * as Ui from "@/components/styled/ui";
+import * as Hero from "@/components/Hero/index";
+import * as Ui from "@/components/ui";
 import { Github, Linkedin, Mail } from "lucide-react";
-import * as Layout from "@/components/styled/layout";
+import * as Layout from "@/components/layout";
 
 const HeroSection = () => {
   const [isLoaded, setIsLoaded] = useState(false);
