@@ -5,7 +5,7 @@ import texture from "@/assets/images/noise.png";
 // Refatoração: Removido propriedades inúteis do Vanta.net (points, spacing, maxDistance)
 const THEME_CONFIG = {
   light: {
-    backgroundColor: 0xd4d4d4,       // Creme — fundo
+   backgroundColor: 0xd4d4d4,       // Creme — fundo
     skyColor: 0xe8e8e8,              // Branco — céu claro
     cloudColor: 0xadc1de,            // Creme suave — nuvens
     cloudShadowColor: 0x5c5c5c,      // Sombra quente — nuvens

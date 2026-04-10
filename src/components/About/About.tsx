@@ -1,6 +1,6 @@
 import { Section, Container, Heading, Text } from '../base';
 import Image from "next/image";
-import Pic from "@/assets/Picture.jpg";
+import Pic from "@/assets/Picture.png";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import {
@@ -59,13 +59,11 @@ const ImageWrapper = styled(motion.div)`
 
 const ProfileImage = styled(Image)`
   object-fit: cover;
-  border-radius: 50%;
-  filter: grayscale(100%);
+  border-radius: 14%;
+  filter: sepia(40%) hue-rotate(-10deg) saturate(1.2);
   transition: filter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    filter: grayscale(0%);
-  }
+
 `;
 
 const ProfileInfo = styled.div`
@@ -414,7 +412,7 @@ const About = () => {
             <TextContent>
               <StyledText>
                 Sou um Desenvolvedor Backend apaixonado por arquitetura de software e integrações de alto desempenho. Minha jornada em
-                <Highlight> Análise e Desenvolvimento de Sistemas</Highlight> me deu a base teórica, mas foi na prática — construindo desde ERPs em Java (Spring) até gateways de IA com
+                <i><strong> Análise e Desenvolvimento de Sistemas</strong></i> me deu a base teórica, mas foi na prática — construindo desde ERPs em Java (Spring) até gateways de IA com
                 Node.js (NestJS) — que desenvolvi minha visão de produto.
               </StyledText>
 

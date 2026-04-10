@@ -47,7 +47,7 @@ export const SkillTags = styled.div`
 export const SkillTag = styled.span`
   padding: 0.25em 0.625em;
   background-color: ${({ theme }) => `${theme.colors.accent}18`};
-  color: ${({ theme }) => theme.colors.accent};
+  color: ${({ theme }) => theme.colors.foreground};
   border-radius: ${({ theme }) => theme.radii.pill};
   font-size: ${({ theme }) => theme.fontSizes.xs};
   font-family: var(--font-mono), 'JetBrains Mono', monospace;

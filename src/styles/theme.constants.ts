@@ -81,14 +81,14 @@ export const RADII = {
 } as const;
 
 export const SHADOWS = {
-  card: '0 0.25rem 1.5rem rgba(28, 25, 23, 0.04)',
-  cardHover: '0 0.5rem 2rem rgba(28, 25, 23, 0.08)',
-  glow: '0 0 1.5rem rgba(201, 169, 110, 0.15)',
-  input: '0 0 0 0.1875rem rgba(201, 169, 110, 0.12)',
+  card: '0 0.25rem 1.5rem rgba(0, 0, 0, 0.04)',
+  cardHover: '0 0.5rem 2rem rgba(0, 0, 0, 0.08)',
+  glow: '0 0 1.5rem rgba(234, 88, 12, 0.15)',
+  input: '0 0 0 0.1875rem rgba(234, 88, 12, 0.12)',
   darkCard: '0 0.5rem 2rem rgba(0, 0, 0, 0.4), 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2)',
   darkCardHover: '0 0.75rem 2.5rem rgba(0, 0, 0, 0.5), 0 0.35rem 1rem rgba(0, 0, 0, 0.3)',
-  darkGlow: '0 0 2rem rgba(212, 184, 122, 0.25), 0 0 4rem rgba(212, 184, 122, 0.1)',
-  darkInput: '0 0 0 0.1875rem rgba(212, 184, 122, 0.15)',
+  darkGlow: '0 0 2rem rgba(234, 88, 12, 0.25), 0 0 4rem rgba(249, 115, 22, 0.1)',
+  darkInput: '0 0 0 0.1875rem rgba(249, 115, 22, 0.15)',
 } as const;
 
 export const TRANSITIONS = {
@@ -103,53 +103,53 @@ export const TRANSITIONS = {
 // ============================================================
 export const COLORS = {
   light: {
-    background: '#FDFCF8',          // Creme — fundo principal
-    foreground: '#1C1917',          // Obsidian — texto principal
+    background: '#FAFAFA',          // Cinza muito claro — fundo principal
+    foreground: '#1A1A1A',          // Cinza quase preto — texto principal
     card: '#FFFFFF',                // Branco — cards, inputs
-    cardForeground: '#1C1917',      // Obsidian
+    cardForeground: '#1A1A1A',      // Cinza quase preto
     popover: '#FFFFFF',
-    popoverForeground: '#1C1917',
-    primary: '#1C1917',             // Obsidian — botões, headings
-    primaryForeground: '#F5F0E8',   // Creme claro — texto em botões
-    secondary: '#F5EED8',           // Gold claro — backgrounds secundários
-    secondaryForeground: '#1C1917',
-    muted: '#F5F0E8',               // Creme muted — backgrounds sutis
-    mutedForeground: '#8B7E6A',     // Warm Gray — legendas, labels
-    accent: '#C9A96E',              // Gold — links, badges, destaques
-    accentForeground: '#1C1917',
+    popoverForeground: '#1A1A1A',
+    primary: '#1A1A1A',             // Cinza escuro — botões, headings
+    primaryForeground: '#FFFFFF',   // Branco — texto em botões
+    secondary: '#F5F5F5',           // Cinza claro — backgrounds secundários
+    secondaryForeground: '#1A1A1A',
+    muted: '#F0F0F0',               // Cinza neutro — backgrounds sutis
+    mutedForeground: '#737373',     // Cinza médio — legendas, labels
+    accent: '#EA580C',              // Laranja vibrante — links, badges, destaques
+    accentForeground: '#FFFFFF',
     destructive: '#DC2626',
-    destructiveForeground: '#F5F0E8',
-    border: '#E8E0D4',              // Sand — bordas de cards
-    input: '#E8E0D4',
-    ring: '#C9A96E',                // Gold — focus ring
+    destructiveForeground: '#FFFFFF',
+    border: '#E5E5E5',              // Cinza claro — bordas de cards
+    input: '#E5E5E5',
+    ring: '#EA580C',                // Laranja — focus ring
   },
   dark: {
-    background: '#1C1917',          // Warm charcoal — mais claro e suave
-    foreground: '#FAF6F0',          // Warm cream — texto principal
-    card: '#262320',                // Elevated surface — cards mais claros
-    cardForeground: '#FAF6F0',
-    popover: '#262320',
-    popoverForeground: '#FAF6F0',
-    primary: '#C9A96E',             // Gold — botões primários no dark
-    primaryForeground: '#1C1917',   // Charcoal — texto em botões gold
-    secondary: '#2E2A26',           // Warm surface — superfícies secundárias
-    secondaryForeground: '#FAF6F0',
-    muted: '#2A2622',               // Ambient surface — backgrounds sutis
-    mutedForeground: '#B8A898',     // Warm gold-gray — legendas mais claras
-    accent: '#D4B87A',              // Brighter gold — mais vivo no escuro
-    accentForeground: '#1C1917',
+    background: '#1A1A1A',          // Cinza muito escuro — fundo principal
+    foreground: '#FAFAFA',          // Cinza quase branco — texto principal
+    card: '#262626',                // Cinza escuro — cards
+    cardForeground: '#FAFAFA',
+    popover: '#262626',
+    popoverForeground: '#FAFAFA',
+    primary: '#EA580C',             // Laranja — botões primários
+    primaryForeground: '#FFFFFF',   // Branco — texto em botões
+    secondary: '#2A2A2A',           // Cinza surface — superfícies secundárias
+    secondaryForeground: '#FAFAFA',
+    muted: '#333333',               // Cinza médio — backgrounds sutis
+    mutedForeground: '#A3A3A3',     // Cinza claro — legendas
+    accent: '#F97316',              // Laranja claro — destaques
+    accentForeground: '#FFFFFF',
     destructive: '#EF4444',
-    destructiveForeground: '#FAF6F0',
-    border: '#3A3530',              // Visible warm border
-    input: '#3A3530',
-    ring: '#D4B87A',                // Gold ring — mais brilhante
+    destructiveForeground: '#FFFFFF',
+    border: '#404040',              // Cinza visível — bordas
+    input: '#404040',
+    ring: '#F97316',                // Laranja claro — focus ring
   },
 } as const;
 
 export const GRADIENTS = {
-  light: 'linear-gradient(135deg, #1C1917 0%, #3D342A 40%, #C9A96E 100%)',
-  dark: 'linear-gradient(135deg, #D4B87A 0%, #C9A96E 40%, #A8894E 100%)',
-  gold: 'linear-gradient(135deg, #C9A96E 0%, #D4B87A 50%, #8B6914 100%)',
-  text: 'linear-gradient(135deg, #1C1917 0%, #C9A96E 100%)',
-  textDark: 'linear-gradient(135deg, #FAF6F0 0%, #D4B87A 100%)',
+  light: 'linear-gradient(135deg, #1A1A1A 0%, #404040 40%, #EA580C 100%)',
+  dark: 'linear-gradient(135deg, #EA580C 0%, #F97316 40%, #C2410C 100%)',
+  gold: 'linear-gradient(135deg, #EA580C 0%, #F97316 50%, #C2410C 100%)',
+  text: 'linear-gradient(135deg, #1A1A1A 0%, #EA580C 100%)',
+  textDark: 'linear-gradient(135deg, #FAFAFA 0%, #F97316 100%)',
 } as const;

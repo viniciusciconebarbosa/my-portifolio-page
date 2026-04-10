@@ -49,10 +49,10 @@ export const HeroContent = styled.div`
 
 export const HeroEyebrow = styled.span`
   font-size: ${({ theme }) => theme.fluidSizes.h2};
+  text-transform: uppercase;
   font-weight: ${({ theme }) => theme.fontWeights.semibold};
   letter-spacing: ${({ theme }) => theme.letterSpacings.widest};
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.accent};
+  color: ${({ theme }) => theme.colors.ring};
 `
 
 export const HeroTitle = styled.h1`
@@ -68,10 +68,16 @@ export const HeroTitle = styled.h1`
     font-weight: ${({ theme }) => theme.fontWeights.light};
     margin-left: 2px;
   }
+  a {
+    color: ${({ theme }) => theme.colors.foreground};
+ 
+    text-transform: uppercase;
+    font-weight: ${({ theme }) => theme.fontWeights.semibold};
+  }
 `
 
 export const HeroSubtitle = styled.p`
-  color: ${({ theme }) => theme.colors.mutedForeground};
+  color: ${({ theme }) => theme.colors.foreground};
   font-size: ${({ theme }) => theme.fontSizes.lg};
   font-weight: ${({ theme }) => theme.fontWeights.regular};
   line-height: ${({ theme }) => theme.lineHeights.relaxed};
