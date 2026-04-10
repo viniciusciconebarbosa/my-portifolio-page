@@ -45,9 +45,10 @@ export const SkillTags = styled.div`
 `
 
 export const SkillTag = styled.span`
-  padding: 0.25em 0.625em;
-  background-color: ${({ theme }) => `${theme.colors.accent}18`};
-  color: ${({ theme }) => theme.colors.foreground};
+
+  padding: 0.55em 0.925em;
+  background-color: ${({ theme }) => `${theme.colors.border}10`};
+  color: ${({ theme }) => `${theme.colors.primary}`};
   border-radius: ${({ theme }) => theme.radii.pill};
   font-size: ${({ theme }) => theme.fontSizes.xs};
   font-family: var(--font-mono), 'JetBrains Mono', monospace;
@@ -57,15 +58,27 @@ export const SkillTag = styled.span`
   align-items: center;
   gap: ${({ theme }) => theme.space[2]};
   transition: ${({ theme }) => theme.transitions.fast};
-  border: 1px solid ${({ theme }) => `${theme.colors.accent}20`};
+  border: 1px solid ${({ theme }) => `${theme.colors.border}80`};
+  cursor: pointer;
+  text-decoration: none;
 
   &:hover {
-    background-color: ${({ theme }) => `${theme.colors.accent}25`};
+    background-color: ${({ theme }) => `${theme.colors.accent}`};
     transform: translateY(-1px);
+    
+    svg {
+      * {
+        cursor: pointer;
+      }
+    }
   }
 
   svg {
-    width: 1rem;
-    height: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  * {
+    cursor: pointer;
   }
 `

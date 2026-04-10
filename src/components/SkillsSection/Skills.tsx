@@ -15,21 +15,22 @@ import {
   SiMui,
   SiOpenjdk,
   SiGithub,
-  SiSpringboot,
+  SiSpring,
   SiJunit5,
   SiExpress,
   SiMongodb,
   SiPostgresql,
+  SiNestjs,
   SiGraphql,
+  SiCloudflare,
   SiGit,
   SiDocker,
   SiAmazon,
-  SiJenkins,
+  SiTailwindcss,
   SiFigma,
   SiOracle
 } from "react-icons/si";
-import { PiArmchair, PiDeviceMobile, PiFolderUser } from "react-icons/pi";
-import { Pi } from "lucide-react";
+import { PiDeviceMobile } from "react-icons/pi";
 
 const getIcon = (skill: string) => {
   const icons: { [key: string]: JSX.Element } = {
@@ -43,7 +44,7 @@ const getIcon = (skill: string) => {
     "MaterialUI": <SiMui />,
     "Github": <SiGithub />,
     "Java": <SiOpenjdk />,
-    "Spring-boot": <SiSpringboot />,
+    "Spring": <SiSpring />,
     "Junit": <SiJunit5 />,
     "Express": <SiExpress />,
     "MongoDB": <SiMongodb />,
@@ -55,9 +56,47 @@ const getIcon = (skill: string) => {
     "CI/CD": <SiGithub />,
     "Figma": <SiFigma />,
     "Oracle": <SiOracle />,
-    "Responsive Design": <PiDeviceMobile />
+    "Responsive Design": <PiDeviceMobile />,
+    "Tailwind CSS": <SiTailwindcss />,
+    "NestJS": <SiNestjs />,
+    "Cloudflare": <SiCloudflare />,
+    
   };
   return icons[skill] || null;
+};
+
+const getSkillUrl = (skill: string) => {
+  const urls: { [key: string]: string } = {
+    "React": "https://react.dev",
+    "Next.js": "https://nextjs.org",
+    "TypeScript": "https://www.typescriptlang.org",
+    "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "Angular": "https://angular.dev",
+    "Node.js": "https://nodejs.org",
+    "JestJS": "https://jestjs.io",
+    "Tailwind CSS": "https://tailwindcss.com",
+    "Java": "https://www.java.com",
+    "Spring": "https://spring.io",
+    "Junit": "https://junit.org/junit5",
+    "NestJS": "https://nestjs.com",
+    "Mockito": "https://site.mockito.org",
+    "Express": "https://expressjs.com",
+    "MongoDB": "https://www.mongodb.com",
+    "PostgreSQL": "https://www.postgresql.org",
+    "REST APIs": "https://developer.mozilla.org/en-US/docs/Web/HTTP",
+    "GraphQL": "https://graphql.org",
+    "Git": "https://git-scm.com",
+    "Github": "https://github.com",
+    "Oracle": "https://www.oracle.com/database",
+    "Docker": "https://www.docker.com",
+    "Cloudflare": "https://www.cloudflare.com",
+    "AWS": "https://aws.amazon.com",
+    "CI/CD": "https://github.com/features/actions",
+    "Figma": "https://www.figma.com",
+    "Responsive Design": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
+    "MaterialUI": "https://mui.com",
+  };
+  return urls[skill] || "#";
 };
 
 export default function SkillsSection() {
@@ -72,12 +111,14 @@ export default function SkillsSection() {
             <Skills1.SkillCard>
               <Skills1.SkillTitle>Frontend Development</Skills1.SkillTitle>
               <Skills1.SkillTags>
-                {["React", "Next.js", "TypeScript", "JavaScript", "Angular", "Node.js", "JestJS", "MaterialUI"].map(
+                {["React", "Next.js", "TypeScript", "JavaScript", "Angular", "Node.js", "JestJS", "Tailwind CSS"].map(
                   (skill, index) => (
-                    <Skills1.SkillTag key={index}>
-                      {getIcon(skill)}
-                      {skill}
-                    </Skills1.SkillTag>
+                    <a key={index} href={getSkillUrl(skill)} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                      <Skills1.SkillTag>
+                        {getIcon(skill)}
+                        {skill}
+                      </Skills1.SkillTag>
+                    </a>
                   )
                 )}
               </Skills1.SkillTags>
@@ -89,9 +130,10 @@ export default function SkillsSection() {
               <Skills1.SkillTags>
                 {[
                   "Java",
-                  "Spring-boot",
+                  "Spring",
                   "Node.js",
                   "Junit",
+                  "NestJS",
                   "Mockito",
                   "Express",
                   "MongoDB",
@@ -100,10 +142,12 @@ export default function SkillsSection() {
                   "GraphQL",
                   "JestJS",
                 ].map((skill, index) => (
-                  <Skills1.SkillTag key={index}>
-                    {getIcon(skill)}
-                    {skill}
-                  </Skills1.SkillTag>
+                  <a key={index} href={getSkillUrl(skill)} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                    <Skills1.SkillTag>
+                      {getIcon(skill)}
+                      {skill}
+                    </Skills1.SkillTag>
+                  </a>
                 ))}
               </Skills1.SkillTags>
             </Skills1.SkillCard>
@@ -116,15 +160,18 @@ export default function SkillsSection() {
                   "Git",
                   "Oracle",
                   "Docker",
+                  "Cloudflare",
                   "AWS",
                   "CI/CD",
                   "Figma",
                   "Responsive Design",
                 ].map((skill, index) => (
-                  <Skills1.SkillTag key={index}>
-                    {getIcon(skill)}
-                    {skill}
-                  </Skills1.SkillTag>
+                  <a key={index} href={getSkillUrl(skill)} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+                    <Skills1.SkillTag>
+                      {getIcon(skill)}
+                      {skill}
+                    </Skills1.SkillTag>
+                  </a>
                 ))}
               </Skills1.SkillTags>
             </Skills1.SkillCard>
