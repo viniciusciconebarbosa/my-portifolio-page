@@ -83,8 +83,8 @@ const HeroSection = () => {
 
         <motion.div variants={item}>
           <Hero.HeroSubtitle>
-            Desenvolvedor Full Stack com foco em arquitetura de software,
-            integrações de alto desempenho e soluções backend escaláveis.
+            Engenheiro Backend focado em arquitetura de sistemas, integrações de alta performance
+             e microsserviços escaláveis sob alta disponibilidade.
           </Hero.HeroSubtitle>
         </motion.div>
 
