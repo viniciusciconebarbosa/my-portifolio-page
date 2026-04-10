@@ -46,7 +46,7 @@ export const SkillTags = styled.div`
 
 export const SkillTag = styled.span`
 
-  padding: 0.55em 0.925em;
+  padding: 0.40em 0.925em;
   background-color: ${({ theme }) => `${theme.colors.border}10`};
   color: ${({ theme }) => `${theme.colors.primary}`};
   border-radius: ${({ theme }) => theme.radii.pill};
@@ -74,8 +74,8 @@ export const SkillTag = styled.span`
   }
 
   svg {
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 1.0rem;
+    height: 1.0rem;
   }
   
   * {
