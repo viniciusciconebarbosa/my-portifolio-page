@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import texture from "@/assets/images/noise.png"; 
+import texture from "@/assets/images/noise.png";
 
 // Refatoração: Removido propriedades inúteis do Vanta.net (points, spacing, maxDistance)
 const THEME_CONFIG = {
@@ -12,7 +12,7 @@ const THEME_CONFIG = {
     sunColor: 0xa99d83,              // Sol dourado suave
     sunGlareColor: 0x000000,         // Brilho do sol — creme brilhante
     sunlightColor: 0xfcfcfc
-                 // Velocidade padrão
+    // Velocidade padrão
   },
   dark: {
     backgroundColor: 0x1A1612,       // Warm charcoal — fundo profundo
@@ -22,7 +22,7 @@ const THEME_CONFIG = {
     sunColor: 0xC9A96E,              // Sol dourado — accent
     sunGlareColor: 0xD4B87A,         // Brilho dourado — mais brilhante
     sunlightColor: 0xE8D8C0,         // Luz quente — creme escuro
-                   // Mais lento no dark — mais calmo
+    // Mais lento no dark — mais calmo
   },
 } as const;
 
@@ -42,9 +42,8 @@ const VantaBackground = ({ isDark }: VantaBackgroundProps) => {
       // Passamos as opções de otimização
       const gl = canvas.getContext("webgl", {
         alpha: false,
-        antialias: false,             // Ganho imediato de performance
-        powerPreference: "low-power", // Economiza bateria/GPU
-        precision: "lowp"             // Cálculos mais rápidos
+        antialias: false,
+
       }) || canvas.getContext("experimental-webgl");
 
       if (!gl) setWebglSupported(false);
@@ -76,21 +75,21 @@ const VantaBackground = ({ isDark }: VantaBackgroundProps) => {
           touchControls: true,
           gyroControls: false,
           scale: 4.0,
-          scaleMobile: 7.0,
-          
+          scaleMobile: 8.0,
+
           // Cloud colors
           backgroundColor: config.backgroundColor,
           skyColor: config.skyColor,
           cloudColor: config.cloudColor,
           cloudShadowColor: config.cloudShadowColor,
-          
+
           // Sun properties
           sunColor: config.sunColor,
           sunGlareColor: config.sunGlareColor,
           sunlightColor: config.sunlightColor,
-          
+
           // Animation
-          
+
           texturePath: texture.src,
         });
       } catch (err) {
@@ -98,7 +97,7 @@ const VantaBackground = ({ isDark }: VantaBackgroundProps) => {
         setWebglSupported(false);
       }
     };
-    
+
     initVanta();
 
     return () => {
@@ -108,7 +107,7 @@ const VantaBackground = ({ isDark }: VantaBackgroundProps) => {
         effectRef.current = null;
       }
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [webglSupported]);
 
   const [transitioning, setTransitioning] = useState(false);
@@ -178,7 +177,7 @@ const VantaBackground = ({ isDark }: VantaBackgroundProps) => {
         style={{
           position: "absolute",
           inset: 0,
-            
+
           transition: "opacity 1.4s ease",
         }}
       />
@@ -188,7 +187,7 @@ const VantaBackground = ({ isDark }: VantaBackgroundProps) => {
         style={{
           position: "absolute",
           inset: 0,
-        
+
           backgroundColor: bgColor,
           opacity: transitioning ? 1 : 0,
           transition: "opacity 1.4s ease",
