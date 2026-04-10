@@ -66,7 +66,7 @@ const HeroSection = () => {
               options={{
                 strings: [
                   "Arquiteto de Software.",
-                  "Full Stack Developer.",
+                  "Engenheiro Full Stack",
                   "Especialista em Backend.",
                   "APIs & Microserviços Escaláveis.",
                   "Integrações com IA & Automações.",
