@@ -16,12 +16,10 @@ export default function Portfolio() {
       <Header />
       <Layout.Main>
         <Hero />
-        <Layout.Container>
-          <SkillsSection />
-          <Projects />
-          <About />
-          <Contact />
-        </Layout.Container>
+        <SkillsSection />
+        <Projects />
+        <About />
+        <Contact />
       </Layout.Main>
       <Footer />
     </>

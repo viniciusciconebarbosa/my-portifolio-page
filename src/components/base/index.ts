@@ -13,32 +13,29 @@ export const flexBetween = css`
 `
 
 export const Container = styled.div`
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 ${({ theme }) => theme.space[4]};
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.md}) {
-    padding: 0 ${({ theme }) => theme.space[8]};
-  }
+  width: min(100% - 2rem, 75rem);
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 2.5rem);
 `
 
 export const Section = styled.section<{ $muted?: boolean }>`
-  padding: ${({ theme }) => theme.space[12]} 0;
+  padding: clamp(3rem, 8vw, 5rem) 0;
+  margin-bottom: 10rem;
   background-color: ${({ $muted, theme }) => 
     $muted ? `${theme.colors.muted}80` : 'transparent'};
+  transition: ${({ theme }) => theme.transitions.theme};
 `
 
 export const Text = styled.p<{ $size?: keyof DefaultTheme['fontSizes']; $muted?: boolean }>`
   font-size: ${({ theme, $size = 'base' }) => theme.fontSizes[$size]};
   color: ${({ theme, $muted }) => 
     $muted ? theme.colors.mutedForeground : theme.colors.foreground};
-  line-height: 1.6;
+  line-height: ${({ theme }) => theme.lineHeights.relaxed};
 `
 
 export const Heading = styled.h2<{ $size?: keyof DefaultTheme['fontSizes'] }>`
   font-size: ${({ theme, $size = '3xl' }) => theme.fontSizes[$size]};
-  font-weight: 700;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
   color: ${({ theme }) => theme.colors.foreground};
-  margin-bottom: ${({ theme }) => theme.space[16]};
-` 
+  margin-bottom: ${({ theme }) => theme.space[8]};
+`

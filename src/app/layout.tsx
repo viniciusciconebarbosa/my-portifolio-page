@@ -1,10 +1,23 @@
 import './globals.css'
 import type React from "react"
 import type { Metadata } from "next"
-import { Roboto } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider"
-import { GlobalStyles } from "@/styles/globals"
 import StyledComponentsRegistry from "@/lib/registry"
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-mono',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   // ========== TÍTULO & DESCRIÇÃO (OTIMIZADOS - Opção 3) ==========
@@ -89,11 +102,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning className={`${inter.variable} ${jetbrainsMono.variable}`}>
       <body>
         <StyledComponentsRegistry>
           <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
-            <GlobalStyles />
             {children}
           </ThemeProvider>
         </StyledComponentsRegistry>

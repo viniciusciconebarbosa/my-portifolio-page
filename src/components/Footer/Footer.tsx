@@ -9,7 +9,7 @@ export default function Footer() {
     <Layout.Footer>
       <Layout.Container>
         <Layout.FooterInner>
-          <Layout.FooterText>© 2024 Vinicius. Todos os direitos reservados.</Layout.FooterText>
+          <Layout.FooterText>© 2026 Vinicius Barbosa. Todos os direitos reservados.</Layout.FooterText>
           <Layout.SocialLinks>
             <Ui.ButtonLink
               href="https://github.com/viniciusciconebarbosa"

@@ -35,6 +35,36 @@ declare module 'styled-components' {
       '5xl': string;
       '6xl': string;
     };
+    fluidSizes: {
+      display: string;
+      h1: string;
+      h2: string;
+      h3: string;
+    };
+    fontWeights: {
+      light: number;
+      regular: number;
+      medium: number;
+      semibold: number;
+      bold: number;
+      extrabold: number;
+    };
+    lineHeights: {
+      tight: number;
+      snug: number;
+      normal: number;
+      relaxed: number;
+      loose: number;
+    };
+    letterSpacings: {
+      tighter: string;
+      tight: string;
+      normal: string;
+      wide: string;
+      wider: string;
+      widest: string;
+      display: string;
+    };
     space: {
       1: string;
       2: string;
@@ -53,8 +83,28 @@ declare module 'styled-components' {
       lg: string;
       xl: string;
     };
-    radius: string;
-    backgroundImage: string;
-    transition: string;
+    radii: {
+      sm: string;
+      btn: string;
+      card: string;
+      pill: string;
+    };
+    shadows: {
+      card: string;
+      cardHover: string;
+      glow: string;
+      input: string;
+    };
+    transitions: {
+      fast: string;
+      base: string;
+      slow: string;
+      theme: string;
+    };
+    gradients: {
+      primary: string;
+      gold: string;
+      text: string;
+    };
   }
-} 
+}

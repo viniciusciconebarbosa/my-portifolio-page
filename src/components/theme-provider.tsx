@@ -6,7 +6,7 @@ import type { ThemeProviderProps } from "next-themes";
 import { ThemeProvider as StyledComponentsProvider, useTheme as useStyledTheme } from "styled-components";
 import { lightTheme, darkTheme } from "@/styles/theme";
 import type { DefaultTheme } from 'styled-components';
-import { GlobalStyles } from "@/styles/GlobalStyles";
+import { GlobalStyles } from "@/styles/globals";
 
 export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
   const [mounted, setMounted] = React.useState(false);
