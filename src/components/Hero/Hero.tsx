@@ -11,10 +11,9 @@ import { useAppTheme } from "@/components/theme-provider";
 import Typewriter from "typewriter-effect";
 
 // Importação dinâmica — evita SSR do canvas WebGL
-const VantaBackground = dynamic(
-  () => import("@/lib/VantaBackground"),
-  { ssr: false }
-);
+const VantaBackground = dynamic(() => import("@/lib/VantaBackground"), {
+  ssr: false,
+});
 
 // Stagger animation variants
 const container = {
@@ -65,11 +64,12 @@ const HeroSection = () => {
             <Typewriter
               options={{
                 strings: [
-                  "Arquiteto de Software.",
-                  "Engenheiro Full Stack",
-                  "Especialista em Backend.",
-                  "APIs & Microserviços Escaláveis.",
-                  "Integrações com IA & Automações.",
+                  "Engenheiro Backend",
+                  "Especialista em Java & NestJS",
+                  "Microserviços de Alta Disponibilidade",
+                  "Especialista em Automação & n8n",
+                  "Soluções de IA com LLMs & RAG",
+                  "Infraestrutura & Cloud (Docker/Linux)",
                 ],
                 autoStart: true,
                 loop: true,
@@ -83,7 +83,8 @@ const HeroSection = () => {
 
         <motion.div variants={item}>
           <Hero.HeroSubtitle>
-            Desenvolvedor Full Stack com foco em arquitetura de software, integrações de alto desempenho e soluções backend escaláveis.
+            Desenvolvedor Full Stack com foco em arquitetura de software,
+            integrações de alto desempenho e soluções backend escaláveis.
           </Hero.HeroSubtitle>
         </motion.div>
 
