@@ -76,7 +76,7 @@ const VantaBackground = ({ isDark }: VantaBackgroundProps) => {
           touchControls: true,
           gyroControls: false,
           scale: 4.0,
-          scaleMobile: 4.0,
+          scaleMobile: 7.0,
           
           // Cloud colors
           backgroundColor: config.backgroundColor,
@@ -135,7 +135,6 @@ const VantaBackground = ({ isDark }: VantaBackgroundProps) => {
         sunColor: config.sunColor,
         sunGlareColor: config.sunGlareColor,
         sunlightColor: config.sunlightColor,
-        speed: config.speed,
       });
     }, 600);
 
