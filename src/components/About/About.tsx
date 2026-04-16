@@ -59,8 +59,9 @@ const ImageWrapper = styled(motion.div)`
 
 const ProfileImage = styled(Image)`
   object-fit: cover;
-  border-radius: 14%;
-  filter: sepia(40%) hue-rotate(-10deg) saturate(1.2);
+  border-radius: 50%;
+  filter: sepia(50%) hue-rotate(-10deg) saturate(2.0) brightness(0.9) contrast(1.3)  ;
+
   transition: filter 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 
 
