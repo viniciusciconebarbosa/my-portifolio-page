@@ -1,6 +1,6 @@
 import { Section, Container, Heading, Text } from '../base';
 import Image from "next/image";
-import Pic from "@/assets/Picture.png";
+import Pic from "@/assets/Picture.jpg";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import {
